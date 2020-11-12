@@ -1,0 +1,11 @@
+.mobile {
+    &__content {
+        width: 100%;
+        height: 566px;
+        background: $yellow;
+        border-radius: 15px;
+    }
+    &__title {
+        max-width: 455px;
+    }
+}

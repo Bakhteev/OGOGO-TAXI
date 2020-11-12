@@ -1,0 +1,17 @@
+.hero {
+    margin: 64px 0 120px 0;
+    &__title {
+        margin: 250px 0 24px 0;
+    }
+    &__item {
+        padding: 0 120px 0 64px;
+    }
+    &__subtitle {
+        margin-bottom: 48px;
+    }
+    &__img {
+        max-width: 944px;
+        max-height: 697px;
+        border-radius:15px;
+    }
+}
