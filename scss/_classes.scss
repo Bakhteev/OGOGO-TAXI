@@ -1,0 +1,40 @@
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+}
+.col-6{
+    width: 50%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-3{
+    width: 25%;
+}
+.title{
+    color: #222426;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 55px;
+    letter-spacing: -0.8px;
+}
+.subtitle{
+    color: #454754;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: -0.2px;
+}
+.btn{
+    color: #292200;
+    background-color: #ffe03b;
+    border-radius: 16px;
+    padding: 16px 40px;
+}
