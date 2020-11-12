@@ -1,0 +1,23 @@
+.map {
+    margin: 120px 0;
+    &__subtitle {
+        margin: 56px 0 32px 0;
+        color:$black;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: -1px;
+    }
+    &__cities {
+        margin-left: 150px;
+        &:nth-child(1) {
+            margin-left: 0
+        }
+    }
+    &__item {
+        color: $black;
+        padding-bottom: 16px;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.2px;
+    }
+}
