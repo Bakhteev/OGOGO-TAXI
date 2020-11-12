@@ -253,3 +253,279 @@ ul {
 .team {
   margin-top: 60px;
 }
+
+.registration {
+  background: url(../../../../img/pagesImg/autopark/section1bg.png) no-repeat center;
+  background-size: cover;
+  min-height: 1150px;
+  padding-top: 40px;
+}
+
+.registration__title {
+  margin-top: 200px;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 69px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.registration__subtitle {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  letter-spacing: 0;
+}
+
+.registration__description {
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 39px;
+  letter-spacing: 1px;
+}
+
+.registration__form {
+  padding-bottom: 10px;
+  position: absolute;
+  top: 60px;
+  right: 360px;
+  max-width: 420px;
+  background: -webkit-linear-gradient(279deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
+  background: -o-linear-gradient(279deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
+  background: linear-gradient(171deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
+}
+
+.registration__form__header {
+  background: rgba(8, 1, 31, 0.911);
+  padding: 15px 0;
+}
+
+.registration__form__title {
+  font-family: Arial,sans-serif;
+  color: #40bfa3;
+  font-size: 48px;
+  text-align: center;
+}
+
+.registration__form__subtitle {
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 372px;
+  margin: 40px auto 20px;
+  max-width: 90%;
+}
+
+.registration__form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration__form__input {
+  min-width: 372px;
+  min-height: 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-family: Arial,sans-serif;
+  color: #777884;
+  font-size: 16px;
+  max-width: 90%;
+}
+
+.registration__form__checkbox {
+  margin: 30px 0;
+}
+
+.registration__form__checkbox input {
+  cursor: pointer;
+}
+
+.registration__form__checkbox label {
+  cursor: pointer;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.registration__form__btn {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  border-radius: 28px;
+  height: 56px;
+  background: #33cca1;
+  line-height: 56px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.registration__form__btn:hover {
+  opacity: 0.9;
+}
+
+.registration__form__description {
+  font-family: Arial,sans-serif;
+  color: #f1f1f1;
+  font-size: 14px;
+  max-width: 90%;
+  margin: 35px auto 0;
+  text-align: center;
+}
+
+.ap-container {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.advantages {
+  margin-top: -150px;
+}
+
+.advantages__title {
+  position: relative;
+  font-family: Arial,sans-serif;
+  color: #33cca1;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.advantages__title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 146px;
+  height: 73px;
+  top: -76px;
+  background: url(../../../../img/pagesImg/autopark/01.png) no-repeat;
+}
+
+.advantages__circle {
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
+}
+
+.advantages__img {
+  max-width: 100%;
+}
+
+.advantages__item {
+  white-space: nowrap;
+  display: block;
+  font-family: Arial,sans-serif;
+  text-align: center;
+  position: absolute;
+  min-width: 200px;
+}
+
+.advantages__item span {
+  font-weight: bold;
+}
+
+.advantages__item:nth-of-type(1) {
+  left: 62%;
+  top: -30px;
+}
+
+.advantages__item:nth-of-type(2) {
+  left: 97%;
+  top: 160px;
+}
+
+.advantages__item:nth-of-type(3) {
+  left: 85%;
+  bottom: 20px;
+}
+
+.advantages__item:nth-of-type(4) {
+  left: -40%;
+  bottom: 20px;
+}
+
+.advantages__item:nth-of-type(5) {
+  left: -45%;
+  top: 160px;
+}
+
+.dignity {
+  margin-top: 60px;
+  min-height: 930px;
+  background: url(../../../../img/pagesImg/autopark/dignitybg.png) no-repeat center;
+  background-size: cover;
+}
+
+.dignity__title {
+  margin: 150px 0 10px 50%;
+  position: relative;
+  font-family: Arial,sans-serif;
+  color: #33cca1;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.dignity__title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 146px;
+  height: 73px;
+  top: -76px;
+  background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
+}
+
+.dignity__circles {
+  text-align: center;
+}
+
+.dignity__item {
+  background: url(../../../../img/pagesImg/autopark/circle.png) no-repeat center;
+  display: inline-block;
+  width: 272px;
+  height: 290px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin: 15px 40px;
+  position: relative;
+}
+
+.dignity__item:hover {
+  background: url(../../../../img/pagesImg/autopark/circleHover.png) no-repeat center;
+}
+
+.dignity__description {
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 80%;
+}
