@@ -1,18 +1,7 @@
 .advantages {
     margin-top: -150px;
 		&__title {
-            position: relative;
-            font-family: Arial,sans-serif;
-            color:  $green;
-            font-size: 36px;
-            text-transform: uppercase;
             &::before{
-                position: absolute;
-                content: "";
-                display: block;
-                width: 146px;
-                height: 73px;
-                top: -76px;
                 background: url(../../../../img/pagesImg/autopark/01.png) no-repeat;
             }
 		}

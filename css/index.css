@@ -254,6 +254,53 @@ ul {
   margin-top: 60px;
 }
 
+
+.ap-container {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.ap-title {
+  position: relative;
+  font-family: Arial,sans-serif;
+  color: #33cca1;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.ap-title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 146px;
+  height: 73px;
+  top: -76px;
+}
+
+.ap-btn {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  border-radius: 28px;
+  height: 56px;
+  background: #33cca1;
+  line-height: 56px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ap-btn:hover {
+  opacity: 0.9;
+=======
 .team__title {
   margin: 130px 0 24px 0;
   max-width: 345px;
@@ -431,6 +478,7 @@ ul {
   color: #40bfa3;
   font-size: 48px;
   text-align: center;
+  font-weight: normal;
 }
 
 .registration__form__subtitle {
@@ -486,31 +534,6 @@ ul {
   padding-left: 10px;
 }
 
-.registration__form__btn {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 230px;
-  border-radius: 28px;
-  height: 56px;
-  background: #33cca1;
-  line-height: 56px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Arial,sans-serif;
-  color: #fff;
-  font-size: 24px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.registration__form__btn:hover {
-  opacity: 0.9;
-}
-
 .registration__form__description {
   font-family: Arial,sans-serif;
   color: #f1f1f1;
@@ -520,30 +543,11 @@ ul {
   text-align: center;
 }
 
-.ap-container {
-  max-width: 1155px;
-  margin: 0 auto;
-}
-
 .advantages {
   margin-top: -150px;
 }
 
-.advantages__title {
-  position: relative;
-  font-family: Arial,sans-serif;
-  color: #33cca1;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
 .advantages__title::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 146px;
-  height: 73px;
-  top: -76px;
   background: url(../../../../img/pagesImg/autopark/01.png) no-repeat;
 }
 
@@ -603,21 +607,10 @@ ul {
 }
 
 .dignity__title {
-  margin: 150px 0 10px 50%;
-  position: relative;
-  font-family: Arial,sans-serif;
-  color: #33cca1;
-  font-size: 36px;
-  text-transform: uppercase;
+  margin: 150px 0 0 50%;
 }
 
 .dignity__title::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 146px;
-  height: 73px;
-  top: -76px;
   background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
 }
 
@@ -652,4 +645,38 @@ ul {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-width: 80%;
+}
+
+.profit {
+  background: url(../../../../../img/pagesImg/autopark/profitbg.png) no-repeat center bottom;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.profit__title {
+  margin: 50px 0 10px 0;
+  font-size: 32px;
+}
+
+.profit__title::before {
+  background: url(../../../../../img/pagesImg/autopark/03.png) no-repeat center;
+}
+
+.profit__list {
+  list-style: url(../../../../../img/pagesImg/autopark/check.png);
+}
+
+.profit__item {
+  font-family: Arial,sans-serif;
+  color: #222426;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.profit__item span {
+  font-weight: bold;
+}
+
+.profit__btn {
+  margin-top: 250px;
 }

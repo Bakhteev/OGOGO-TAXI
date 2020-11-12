@@ -41,6 +41,7 @@
 				color: #40bfa3;
 				font-size: 48px;
 				text-align: center;
+				font-weight: normal;
 			}
 			&__subtitle{
 				font-family: Arial,sans-serif;
@@ -82,24 +83,6 @@
 					padding-left: 10px;
 				}
 			}
-			&__btn{
-				margin-left: 50%;
-				transform: translateX(-50%);
-				width: 230px;
-				border-radius: 28px;
-				height: 56px;
-				background:	$green;
-				line-height: 56px;
-				text-align: center;
-				box-sizing: border-box;
-				font-family: Arial,sans-serif;
-				color: #fff;
-				font-size: 24px;
-				transition: 0.3s;
-				&:hover{
-					opacity: 0.9;
-				}
-			}
 			&__description{
 				font-family: Arial,sans-serif;
 				color: $ligthGrey;
@@ -109,8 +92,4 @@
 				text-align: center;
 			}
 		}
-}
-.ap-container {
-    max-width: 1155px;
-    margin: 0 auto;
 }
