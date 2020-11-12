@@ -168,7 +168,15 @@ ul {
   border-radius: 15px;
 }
 
+.mobile {
+  margin-bottom: 120px;
+}
+
 .mobile__content {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 56px 64px;
   width: 100%;
   height: 566px;
   background: #ffe03b;
@@ -177,4 +185,67 @@ ul {
 
 .mobile__title {
   max-width: 455px;
+}
+
+.mobile__list {
+  padding: 24px 0 62px 0;
+}
+
+.mobile__item {
+  position: relative;
+  padding: 12px 0 16px 46px;
+  color: #222426;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.mobile__item::before {
+  position: absolute;
+  content: '';
+  width: 48px;
+  height: 48px;
+  background: url(../../img/mobile/bullet-check-icon-1.svg) no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.mobile__img {
+  position: absolute;
+  top: -37px;
+  right: 45px;
+  width: 444px;
+  height: 649px;
+}
+
+.mobile__apple {
+  width: 144px;
+  height: 48px;
+}
+
+.mobile__google {
+  margin-left: 16px;
+  width: 168px;
+  height: 48px;
+}
+
+.services__title {
+  padding: 32px 0 24px 0;
+  color: #222426;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
+
+.services__subtitle {
+  color: #454754;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.services__description {
+  text-align: center;
+  margin-top: 60px;
+  color: #73757e;
+  font-size: 11px;
+  line-height: 14px;
 }
