@@ -4,19 +4,8 @@
     background: url(../../../../img/pagesImg/autopark/dignitybg.png) no-repeat center;
     background-size: cover;
 	&__title {
-        margin: 150px 0 10px 50%;
-        position: relative;
-        font-family: Arial,sans-serif;
-        color: $green;
-        font-size: 36px;
-        text-transform: uppercase;
+        margin: 150px 0 0 50%;
         &::before{
-            position: absolute;
-            content: "";
-            display: block;
-            width: 146px;
-            height: 73px;
-            top: -76px;
             background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
         }
 	}
