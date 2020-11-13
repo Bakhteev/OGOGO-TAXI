@@ -1,0 +1,95 @@
+.registration {
+	background: url(../../../../img/pagesImg/autopark/section1bg.png) no-repeat center;
+	background-size: cover;
+	min-height: 1150px;
+	padding-top: 40px;
+		&__title {
+			margin-top: 200px;
+			font-family: Arial,sans-serif;
+			color: #fff;
+			font-size: 69px;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
+		&__subtitle {
+			font-family: Arial, sans-serif;
+			color: #fff;
+			font-size: 35px;
+			text-transform: uppercase;
+			margin-top: 15px;
+			letter-spacing: 0;
+		}
+		&__description {
+			font-family: Arial,sans-serif;
+			color: #fff;
+			font-size: 39px;
+			letter-spacing: 1px;
+		}
+		&__form {
+			padding-bottom: 10px;
+			position: absolute;
+			top: 60px;
+    		right: 360px;
+			max-width: 420px;
+			background: linear-gradient(171deg, rgba(9,121,88,1) 9%, rgba(43,42,64,1) 21%, rgba(43,42,64,1) 65%, rgba(9,121,88,1) 100%);
+			&__header{
+				background: rgba(8, 1, 31, 0.911);
+				padding: 15px 0;
+			}
+			&__title{
+				font-family: Arial,sans-serif;
+				color: #40bfa3;
+				font-size: 48px;
+				text-align: center;
+				font-weight: normal;
+			}
+			&__subtitle{
+				font-family: Arial,sans-serif;
+				color: #fff;
+				font-size: 16px;
+				text-align: center;
+				width: 372px;
+				margin: 40px auto 20px;
+				max-width: 90%;
+			}
+			&__inputs{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+			}
+			&__input{
+				min-width: 372px;
+				min-height: 43px;
+				box-sizing: border-box;
+				margin-bottom: 6px;
+				border-radius: 4px;
+				padding: 10px 15px;
+				font-family: Arial,sans-serif;
+				color: #777884;
+				font-size: 16px;
+				max-width: 90%;
+			}
+			&__checkbox{
+				margin: 30px 0;
+				input{
+					cursor: pointer;
+				}
+				label{
+					cursor: pointer;
+					font-family: Arial,sans-serif;
+					color: #fff;
+					font-size: 16px;
+					padding-left: 10px;
+				}
+			}
+			&__description{
+				font-family: Arial,sans-serif;
+				color: $ligthGrey;
+				font-size: 14px;
+				max-width: 90%;
+				margin: 35px auto 0;
+				text-align: center;
+			}
+		}
+}

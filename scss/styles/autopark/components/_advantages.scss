@@ -1,0 +1,47 @@
+.advantages {
+    margin-top: -150px;
+		&__title {
+            &::before{
+                background: url(../../../../img/pagesImg/autopark/01.png) no-repeat;
+            }
+		}
+		&__circle {
+            margin: 0 auto;
+            max-width: 400px;
+            position: relative;
+        }
+        &__img{
+            max-width: 100%;
+        }
+		&__item {
+            white-space: nowrap;
+            display: block;
+            font-family: Arial,sans-serif;
+            text-align: center;
+            position: absolute;
+            min-width: 200px;
+            span{
+                font-weight: bold;
+            }
+            &:nth-of-type(1){
+                left: 62%;
+                top: -30px;
+            }
+            &:nth-of-type(2){
+                left: 97%;
+                top: 160px;
+            }
+            &:nth-of-type(3){
+                left: 85%;
+                bottom: 20px;
+            }
+            &:nth-of-type(4){
+                left: -40%;
+                bottom: 20px;
+            }
+            &:nth-of-type(5){
+                left: -45%;
+                top: 160px
+            }
+		}
+}

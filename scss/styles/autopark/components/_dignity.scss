@@ -1,0 +1,37 @@
+.dignity {
+    margin-top: 60px;
+    min-height: 930px;
+    background: url(../../../../img/pagesImg/autopark/dignitybg.png) no-repeat center;
+    background-size: cover;
+	&__title {
+        margin: 150px 0 0 50%;
+        &::before{
+            background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
+        }
+	}
+	&__circles {
+        text-align: center;
+	}
+	&__item {
+        background: url(../../../../img/pagesImg/autopark/circle.png) no-repeat center;
+        display: inline-block;
+        width: 272px;
+        height: 290px;
+        transition: 0.2s;
+        margin: 15px 40px;
+        position: relative;
+        &:hover{
+            background: url(../../../../img/pagesImg/autopark/circleHover.png) no-repeat center;
+        }
+	}
+	&__description {
+        font-family: Arial,sans-serif;
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        min-width: 80%;
+	}
+}

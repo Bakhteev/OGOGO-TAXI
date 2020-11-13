@@ -1,0 +1,21 @@
+.services {
+    &__title {
+        padding: 32px 0 24px 0;
+        color: $black;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: -1px;
+    }
+    &__subtitle {
+        color: $grey;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    &__description {
+        text-align: center;
+        margin-top: 60px;
+        color: #73757e;
+        font-size: 11px;
+        line-height: 14px;
+    }
+}

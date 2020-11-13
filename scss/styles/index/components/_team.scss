@@ -1,0 +1,19 @@
+.team {
+    margin-top: 60px;
+    &__title {
+        margin: 130px 0 24px 0;
+        max-width: 345px;
+    }
+    &__subtitle {
+        margin-bottom: 48px;
+        max-width: 390px;
+    }
+    &__btn {
+        background: $green;
+    }
+    &__img {
+        width: 560px;
+        height: 600px;
+        border-radius: 15px;
+    }
+}
