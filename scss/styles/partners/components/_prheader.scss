@@ -1,0 +1,17 @@
+.header__right__link{
+    position: relative;
+    padding: 10px 45px 0 0 ;
+    &::before{
+        position: absolute;
+        content: '📞';
+        top: 8px;
+        left: -25px;
+        font-size: 13px;
+        filter: grayscale(1);
+    }
+}
+.pr-header{
+    .header__right{
+        margin-left: 408px;
+    }
+}
