@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -254,53 +255,6 @@ ul {
   margin-top: 60px;
 }
 
-
-.ap-container {
-  max-width: 1155px;
-  margin: 0 auto;
-}
-
-.ap-title {
-  position: relative;
-  font-family: Arial,sans-serif;
-  color: #33cca1;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.ap-title::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 146px;
-  height: 73px;
-  top: -76px;
-}
-
-.ap-btn {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 230px;
-  border-radius: 28px;
-  height: 56px;
-  background: #33cca1;
-  line-height: 56px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Arial,sans-serif;
-  color: #fff;
-  font-size: 24px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.ap-btn:hover {
-  opacity: 0.9;
-=======
 .team__title {
   margin: 130px 0 24px 0;
   max-width: 345px;
@@ -423,6 +377,53 @@ ul {
   background-color: #f1f1f1;
   border-radius: 7px;
   padding: 7px 18px;
+}
+
+.ap-container {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.ap-title {
+  position: relative;
+  font-family: Arial,sans-serif;
+  color: #33cca1;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.ap-title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 146px;
+  height: 73px;
+  top: -76px;
+}
+
+.ap-btn {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  border-radius: 28px;
+  height: 56px;
+  background: #33cca1;
+  line-height: 56px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ap-btn:hover {
+  opacity: 0.9;
 }
 
 .registration {
@@ -607,11 +608,14 @@ ul {
 }
 
 .dignity__title {
-  margin: 150px 0 0 50%;
+  margin-left: 50%;
+  padding: 150px 0 10px 0;
+  white-space: nowrap;
 }
 
 .dignity__title::before {
   background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
+  top: 76px;
 }
 
 .dignity__circles {
@@ -679,4 +683,53 @@ ul {
 
 .profit__btn {
   margin-top: 250px;
+}
+
+.header__right__link {
+  position: relative;
+  padding: 10px 45px 0 0;
+}
+
+.header__right__link::before {
+  position: absolute;
+  content: '📞';
+  top: 8px;
+  left: -25px;
+  font-size: 13px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.pr-header .header__right {
+  margin-left: 408px;
+}
+
+.pr-btn {
+  background-color: #33cca1;
+}
+
+.car {
+  margin: 120px 0;
+}
+
+.car__content {
+  padding: 56px 0 142px 64px;
+  background: #33cca1 url(../../../../img/pagesImg/partners/car.png) no-repeat;
+  background-position: 633px 50%;
+  background-size: 95% auto;
+  border-radius: 15px;
+}
+
+.car__title {
+  max-width: 60%;
+  margin-bottom: 100px;
+}
+
+.car__link {
+  color: #061813;
+  font-family: Sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.2px;
+  text-decoration: underline;
 }
