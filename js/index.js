@@ -1,8 +1,16 @@
-// partners accordion
-const accordionTitle = document.querySelector(".question__item");
-    accordionInfo = document.querySelector(".question__item__info");
-console.log(accordionTitle);
-accordionTitle.addEventListener('click', () =>{
-    accordionTitle.classList.toggle('open')
-})
-//============================================================
+// partners
+
+document.querySelectorAll('.question__item').forEach((item) => 
+    item.addEventListener('click', () => {
+        if (item.classList.contains('open')) {
+            item.classList.remove('open')
+        } else{
+                document
+                .querySelectorAll('.question__item')
+                .forEach((child) => child.classList.remove('open'))
+            item.classList.add('open')
+        }
+    })
+);
+
+//==========================================================================================
