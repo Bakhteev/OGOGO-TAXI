@@ -751,9 +751,9 @@ ul {
   letter-spacing: -0.8px;
   cursor: pointer;
   border-bottom: 1px solid #e3e4e8;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .question__item::before {
@@ -765,6 +765,9 @@ ul {
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .question__item__info {
@@ -773,9 +776,12 @@ ul {
   font-family: Arial, sans-serif;
   font-size: 17px;
   line-height: 24px;
-  display: none;
+  opacity: 0;
   padding: 20px 0;
   z-index: -1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .question__link {
@@ -803,7 +809,7 @@ ul {
 }
 
 .question__item.open .question__item__info {
-  display: block;
+  opacity: 1;
 }
 
 .question__item.open::before {
