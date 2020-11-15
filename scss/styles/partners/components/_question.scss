@@ -12,7 +12,7 @@
 			letter-spacing: -0.8px;
 			cursor: pointer;
 			border-bottom: 1px solid #e3e4e8;
-			transition: 0.3s;
+			transition: 0.5s;
 			&::before{
 				content: "+";
 				position: absolute;
@@ -22,6 +22,7 @@
 				font-weight: 500;
 				font-size: 30px;
 				line-height: 1;
+				transition: 0.3s;
 			}
 			&__info{
 				position: absolute;
@@ -29,9 +30,10 @@
 				font-family: Arial, sans-serif;
 				font-size: 17px;
 				line-height: 24px;
-				display: none;
+				opacity: 0;
 				padding: 20px 0;
 				z-index: -1;
+				transition: 0.3s;
 			}
 
 		}
@@ -58,7 +60,7 @@
 	padding-bottom: 100px;
 }
 .question__item.open .question__item__info{
-	display: block;
+	opacity: 1;
 }
 .question__item.open::before{
 	content: "-";
