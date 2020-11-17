@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -378,6 +379,53 @@ ul {
   padding: 7px 18px;
 }
 
+.ap-container {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.ap-title {
+  position: relative;
+  font-family: Arial,sans-serif;
+  color: #33cca1;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.ap-title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 146px;
+  height: 73px;
+  top: -76px;
+}
+
+.ap-btn {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 230px;
+  border-radius: 28px;
+  height: 56px;
+  background: #33cca1;
+  line-height: 56px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ap-btn:hover {
+  opacity: 0.9;
+}
+
 .registration {
   background: url(../../../../img/pagesImg/autopark/section1bg.png) no-repeat center;
   background-size: cover;
@@ -431,6 +479,7 @@ ul {
   color: #40bfa3;
   font-size: 48px;
   text-align: center;
+  font-weight: normal;
 }
 
 .registration__form__subtitle {
@@ -486,31 +535,6 @@ ul {
   padding-left: 10px;
 }
 
-.registration__form__btn {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 230px;
-  border-radius: 28px;
-  height: 56px;
-  background: #33cca1;
-  line-height: 56px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Arial,sans-serif;
-  color: #fff;
-  font-size: 24px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.registration__form__btn:hover {
-  opacity: 0.9;
-}
-
 .registration__form__description {
   font-family: Arial,sans-serif;
   color: #f1f1f1;
@@ -520,30 +544,11 @@ ul {
   text-align: center;
 }
 
-.ap-container {
-  max-width: 1155px;
-  margin: 0 auto;
-}
-
 .advantages {
   margin-top: -150px;
 }
 
-.advantages__title {
-  position: relative;
-  font-family: Arial,sans-serif;
-  color: #33cca1;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
 .advantages__title::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 146px;
-  height: 73px;
-  top: -76px;
   background: url(../../../../img/pagesImg/autopark/01.png) no-repeat;
 }
 
@@ -603,22 +608,14 @@ ul {
 }
 
 .dignity__title {
-  margin: 150px 0 10px 50%;
-  position: relative;
-  font-family: Arial,sans-serif;
-  color: #33cca1;
-  font-size: 36px;
-  text-transform: uppercase;
+  margin-left: 50%;
+  padding: 150px 0 10px 0;
+  white-space: nowrap;
 }
 
 .dignity__title::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 146px;
-  height: 73px;
-  top: -76px;
   background: url(../../../../img/pagesImg/autopark/02.png) no-repeat;
+  top: 76px;
 }
 
 .dignity__circles {
@@ -652,4 +649,170 @@ ul {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-width: 80%;
+}
+
+.profit {
+  background: url(../../../../../img/pagesImg/autopark/profitbg.png) no-repeat center bottom;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.profit__title {
+  margin: 50px 0 10px 0;
+  font-size: 32px;
+}
+
+.profit__title::before {
+  background: url(../../../../../img/pagesImg/autopark/03.png) no-repeat center;
+}
+
+.profit__list {
+  list-style: url(../../../../../img/pagesImg/autopark/check.png);
+}
+
+.profit__item {
+  font-family: Arial,sans-serif;
+  color: #222426;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.profit__item span {
+  font-weight: bold;
+}
+
+.profit__btn {
+  margin-top: 250px;
+}
+
+.header__right__link {
+  position: relative;
+  padding: 10px 45px 0 0;
+}
+
+.header__right__link::before {
+  position: absolute;
+  content: '📞';
+  top: 8px;
+  left: -25px;
+  font-size: 13px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.pr-header .header__right {
+  margin-left: 408px;
+}
+
+.pr-btn {
+  background-color: #33cca1;
+}
+
+.car {
+  margin: 120px 0;
+}
+
+.car__content {
+  padding: 56px 0 142px 64px;
+  background: #33cca1 url(../../../../img/pagesImg/partners/car.png) no-repeat;
+  background-position: 633px 50%;
+  background-size: 95% auto;
+  border-radius: 15px;
+}
+
+.car__title {
+  max-width: 60%;
+  margin-bottom: 100px;
+}
+
+.car__link {
+  color: #061813;
+  font-family: Sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.2px;
+  text-decoration: underline;
+}
+
+.question {
+  min-height: 600px;
+}
+
+.question__title {
+  margin-bottom: 24px;
+}
+
+.question__item {
+  position: relative;
+  padding: 16px 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e4e8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.question__item::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.question__item__info {
+  position: absolute;
+  color: #454754;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  opacity: 0;
+  padding: 20px 0;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.question__link {
+  display: block;
+  color: #222426;
+  padding: 16px 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  cursor: pointer;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.question__link--green {
+  background-color: #33cca1;
+  border-radius: 16px;
+  border: none;
+  margin-top: 10px;
+  padding: 14px 0 18px 16px;
+}
+
+.question__item.open {
+  padding-bottom: 100px;
+}
+
+.question__item.open .question__item__info {
+  opacity: 1;
+}
+
+.question__item.open::before {
+  content: "-";
+  font-size: 33px;
 }
