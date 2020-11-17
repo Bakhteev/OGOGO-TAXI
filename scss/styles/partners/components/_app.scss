@@ -1,0 +1,40 @@
+.app {
+    margin: 120px 0;
+		&__content {
+            box-sizing: border-box;
+            height: 573px;
+            padding: 56px 64px;
+            background: $orange;
+            border-radius: 16px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+		}
+		&__img {
+            position: absolute;
+            top: -40px;
+            left: 60px;
+            width: 460px;
+            height: 672px;
+		}
+		&__title {
+            max-width: 60%;
+		}
+		&__description {
+            margin-top: 20px;
+            max-width: 60%;
+        }
+        &__row{
+            align-self: center;
+            margin-left: 330px;
+            margin-top: 40px;
+        }
+		&__btn {
+            img{
+                margin-right: 20px;
+                height: 60px;
+            }
+		}
+}
+
