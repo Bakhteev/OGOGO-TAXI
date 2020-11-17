@@ -5,14 +5,12 @@
 	padding-top: 40px;
 		&__title {
 			margin-top: 200px;
-			font-family: Arial,sans-serif;
 			color: #fff;
 			font-size: 69px;
 			letter-spacing: 2px;
 			font-weight: bold;
 		}
 		&__subtitle {
-			font-family: Arial, sans-serif;
 			color: #fff;
 			font-size: 35px;
 			text-transform: uppercase;
@@ -20,7 +18,6 @@
 			letter-spacing: 0;
 		}
 		&__description {
-			font-family: Arial,sans-serif;
 			color: #fff;
 			font-size: 39px;
 			letter-spacing: 1px;
@@ -37,14 +34,12 @@
 				padding: 15px 0;
 			}
 			&__title{
-				font-family: Arial,sans-serif;
 				color: #40bfa3;
 				font-size: 48px;
 				text-align: center;
 				font-weight: normal;
 			}
 			&__subtitle{
-				font-family: Arial,sans-serif;
 				color: #fff;
 				font-size: 16px;
 				text-align: center;
@@ -65,26 +60,14 @@
 				margin-bottom: 6px;
 				border-radius: 4px;
 				padding: 10px 15px;
-				font-family: Arial,sans-serif;
 				color: #777884;
 				font-size: 16px;
 				max-width: 90%;
 			}
-			&__checkbox{
-				margin: 30px 0;
-				input{
-					cursor: pointer;
-				}
-				label{
-					cursor: pointer;
-					font-family: Arial,sans-serif;
-					color: #fff;
-					font-size: 16px;
-					padding-left: 10px;
-				}
+			&__btn{
+				margin-top: 30px;
 			}
 			&__description{
-				font-family: Arial,sans-serif;
 				color: $ligthGrey;
 				font-size: 14px;
 				max-width: 90%;
