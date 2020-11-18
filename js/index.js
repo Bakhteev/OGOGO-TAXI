@@ -15,3 +15,20 @@ itemParent.forEach((li,i) => {
 })
 
 //==========================================================================================
+
+// languages
+
+let language = document.querySelector('.header__language');
+let languageItem = document.querySelectorAll('.header__language__item')
+
+language.addEventListener('click', () => {
+    language.classList.toggle('drop')
+})
+
+languageItem.forEach(language => {
+    language.addEventListener('click', () => {
+        language.classList.toggle('order')
+    })
+})
+
+//=======================================================================================
