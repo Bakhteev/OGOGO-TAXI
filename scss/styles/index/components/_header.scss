@@ -1,6 +1,7 @@
 .header {
     margin: 0 16px;
     &__content {
+        justify-content: space-between;
         margin-top: 20px;
     }
     &__logo {
@@ -8,15 +9,14 @@
     }
     &__middle {
         padding-top: 10px;
-        margin-left: 212px;
+    }
+    &__item {
+        margin: 0 10px;
     }
     &__link {
         font-size: 16px;
         color:$grey;
         margin: 0 12px;
-    }
-    &__right {
-       margin-left: 650px;
     }
     &__lang {
         position: relative;
@@ -36,4 +36,5 @@
         }
     }
 }
+
  
