@@ -1,5 +1,5 @@
 .hero {
-    margin: 64px 0 120px 0;
+    margin: 94px 0 150px 0;
     &__title {
         margin: 250px 0 24px 0;
     }
@@ -13,5 +13,16 @@
         max-width: 944px;
         max-height: 697px;
         border-radius:15px;
+    }
+    &__btn {
+        font-size: 20px;
+        color:$black;
+        width: 230px;
+        height: 62px;
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            transform: scale(1.05);
+        }
     }
 }

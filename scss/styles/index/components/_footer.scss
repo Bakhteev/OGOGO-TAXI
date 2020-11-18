@@ -1,12 +1,15 @@
 .footer {
     background: #000000;
-    height: 625px;
+    padding: 100px 0;
     &__top {
         justify-content: space-between;
         padding: 32px 0;
     }
     &__logo {
         padding-top: 15px;
+    }
+    &__bottom {
+        justify-content: space-between;
     }
     &__list {
         margin-left: 60px;
