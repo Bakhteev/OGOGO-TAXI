@@ -86,7 +86,7 @@ ul {
 
 .btn {
   color: #292200;
-  background-color: #ffe03b;
+  background-color: #FF7A00;
   border-radius: 16px;
   padding: 16px 40px;
 }
@@ -104,6 +104,9 @@ ul {
 }
 
 .header__content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -113,17 +116,16 @@ ul {
 
 .header__middle {
   padding-top: 10px;
-  margin-left: 212px;
+}
+
+.header__item {
+  margin: 0 10px;
 }
 
 .header__link {
   font-size: 16px;
   color: #454754;
   margin: 0 12px;
-}
-
-.header__right {
-  margin-left: 650px;
 }
 
 .header__lang {
@@ -180,7 +182,7 @@ ul {
   padding: 56px 64px;
   width: 100%;
   height: 566px;
-  background: #ffe03b;
+  background: #FF7A00;
   border-radius: 15px;
 }
 
