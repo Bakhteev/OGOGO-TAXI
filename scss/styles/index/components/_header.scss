@@ -10,6 +10,9 @@
     &__middle {
         padding-top: 10px;
     }
+    &__right {
+        height: 38px;
+    }
     &__item {
         margin: 0 10px;
     }
@@ -35,12 +38,16 @@
             color:$black;
         }
     }
-    &__lang {
+    &__language{
+        overflow-y: hidden;
+        height: 29px;
+        transition: 0.3s;
         position: relative;
-        font-size: 16px;
-        color:$grey;
-        padding: 10px 45px 0 0;
-        &::before {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        user-select: none;
+        &::before{
             position: absolute;
             content:'';
             width: 7px;
@@ -50,7 +57,25 @@
             border-left: none;
             transform: rotate(45deg);
             right: 25px;
+            top: 40%;
+            transition: 0.3s;
+            transform-origin: top;
         }
+        &__item{
+            font-size: 16px;
+            color:$grey;
+            padding: 10px 45px 0 0;
+        }
+    }
+    .header__language.drop{
+        height: auto;
+        overflow-y: auto;
+        &::before{
+            transform: rotate(-133deg);
+        }
+    }
+    .header__language__item.order{
+        order: -1;
     }
 }
 

@@ -1,6 +1,7 @@
 .mobile {
     margin-bottom: 120px;
     &__content {
+        perspective: 1000px;
         position: relative;
         box-sizing: border-box;
         padding: 56px 64px;
@@ -34,7 +35,7 @@
     &__img {
         position: absolute;
         top: -37px;
-        right: 45px;
+        right: 15px;
         width: 444px;
         height: 649px;
     }
