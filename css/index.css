@@ -117,6 +117,10 @@ ul {
   padding-top: 10px;
 }
 
+.header__right {
+  height: 38px;
+}
+
 .header__item {
   margin: 0 10px;
 }
@@ -149,14 +153,28 @@ ul {
   color: #222426;
 }
 
-.header__lang {
+.header__language {
+  overflow-y: hidden;
+  height: 29px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   position: relative;
-  font-size: 16px;
-  color: #454754;
-  padding: 10px 45px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.header__lang::before {
+.header__language::before {
   position: absolute;
   content: '';
   width: 7px;
@@ -168,6 +186,36 @@ ul {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   right: 25px;
+  top: 40%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+
+.header__language__item {
+  font-size: 16px;
+  color: #454754;
+  padding: 10px 45px 0 0;
+}
+
+.header .header__language.drop {
+  height: auto;
+  overflow-y: auto;
+}
+
+.header .header__language.drop::before {
+  -webkit-transform: rotate(-133deg);
+      -ms-transform: rotate(-133deg);
+          transform: rotate(-133deg);
+}
+
+.header .header__language__item.order {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .hero {
@@ -216,6 +264,8 @@ ul {
 }
 
 .mobile__content {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -255,7 +305,7 @@ ul {
 .mobile__img {
   position: absolute;
   top: -37px;
-  right: 45px;
+  right: 15px;
   width: 444px;
   height: 649px;
 }
@@ -329,6 +379,8 @@ ul {
   width: 560px;
   height: 600px;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
