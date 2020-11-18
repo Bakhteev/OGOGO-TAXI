@@ -813,16 +813,28 @@ ul {
           order: -1;
 }
 
-.pr-btn {
-  margin-right: 20px;
+.pr-hero .pr-title {
+  margin-bottom: 20px;
 }
 
-.pr-btn img {
-  max-height: 60px;
+.pr-hero .hero__item {
+  text-align: center;
+  margin: 0 auto;
 }
 
-.pr-title {
-  max-width: 67%;
+.pr-hero .pr-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FF7A00;
+  border-radius: 16px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.pr-hero .pr-btn:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .car {
@@ -950,24 +962,12 @@ ul {
   background: #FF7A00;
   border-radius: 16px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .app__img {
   position: absolute;
-  top: -40px;
-  left: 60px;
-  width: 460px;
-  height: 672px;
+  top: -31px;
+  right: -35px;
 }
 
 .app__title {
@@ -975,19 +975,27 @@ ul {
 }
 
 .app__description {
-  margin-top: 20px;
   max-width: 60%;
+  margin-top: 20px;
 }
 
 .app__row {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-left: 330px;
-  margin-top: 40px;
+  margin-top: 80px;
+}
+
+.app__btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .app__btn img {
   margin-right: 20px;
   height: 60px;
+}
+
+.app__btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }

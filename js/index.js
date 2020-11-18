@@ -37,3 +37,15 @@ languageItem.forEach(language => {
 })
 
 //=======================================================================================
+
+// scroll smooth
+let scrollBtn = document.getElementById('scroll')
+
+scrollBtn.addEventListener('click', () =>{
+    window.scroll({
+        top: 2100,
+        left: 0,
+        behavior: 'smooth'
+    });
+})
+//============================================================================================
