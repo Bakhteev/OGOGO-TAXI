@@ -1,8 +1,12 @@
 .services {
+    margin-bottom: 50px;
+    &__content {
+        text-align: center;
+    }
     &__title {
         padding: 32px 0 24px 0;
         color: $black;
-        font-size: 32px;
+        font-size: 30px;
         line-height: 35px;
         letter-spacing: -1px;
     }
