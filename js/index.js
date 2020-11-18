@@ -19,7 +19,7 @@ itemParent.forEach((li, i) => {
 // languages
 
 let language = document.querySelector('.header__language');
-let languageItem = document.querySelectorAll('.header__language__item')
+let languageItem = document.querySelectorAll('.header__language__item');
 
 language.addEventListener('click', () => {
     language.classList.toggle('drop')
@@ -37,3 +37,23 @@ languageItem.forEach(language => {
 })
 
 //=======================================================================================
+
+// scroll smooth
+const Scroll = (top, left) => {
+    window.scroll({
+        top: top,
+        left: left,
+        behavior: 'smooth'
+    });
+};
+
+let scrollBtnPartners = document.getElementById('scroll');
+let scrollBtnAutopark = document.querySelector('.ap-btn');
+
+
+scrollBtnPartners.addEventListener('click', () => Scroll(2100));
+scrollBtnAutopark.addEventListener('click', () => Scroll(300))
+
+
+
+//============================================================================================
