@@ -38,6 +38,7 @@
         right: 15px;
         width: 444px;
         height: 649px;
+        animation: float 4s ease-in-out infinite;
     }
     &__apple {
         width: 144px;
@@ -47,5 +48,17 @@
         margin-left: 16px;
         width: 168px;
         height: 48px;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
     }
 }
