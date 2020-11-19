@@ -1046,6 +1046,14 @@ ul {
   }
 }
 
+
+  .app__btn:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .container {
     max-width: 360px;
@@ -1124,3 +1132,4 @@ ul {
     max-width: 300px;
   }
 }
+
