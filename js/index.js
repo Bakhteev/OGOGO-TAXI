@@ -32,18 +32,25 @@ $('.header__burger').on('click', function() {
 //========================================================================================
 
 // scroll smooth
-// const Scroll = (top, left) => {
-//     window.scroll({
-//         top: top,
-//         left: left,
-//         behavior: 'smooth'
-//     });
-// };
-
+export const Scroll = (top, left) => {
+    window.scroll({
+        top: top,
+        left: left,
+        behavior: 'smooth'
+    });
+};
 
 // let scrollBtnPartners = document.getElementById('scroll');
 // let scrollBtnAutopark = document.getElementById('apBtn');
+// let partnersTarget = document.querySelector('.app');
+// let autoparkTarget = document.querySelector('.registration');
 
-// scrollBtnPartners.addEventListener('click', () => Scroll(2100));
-// scrollBtnAutopark.addEventListener('click', () => Scroll(900))
+// console.log(autoparkTarget);
+// let autoparkTargetCoords = autoparkTarget.getBoundingClientRect();
+// let partnersTargetCoords = partnersTarget.getBoundingClientRect();
+// let autoparkTargetCoordsTop = [autoparkTargetCoords.top - 100];
+// let partnersTargetCoordsTop = [partnersTargetCoords.top - 100];
+
+// scrollBtnPartners.addEventListener('click', () => Scroll(partnersTargetCoordsTop));
+// scrollBtnAutopark.addEventListener('click', () => Scroll(autoparkTargetCoordsTop));
 //========================================================================================
