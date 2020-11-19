@@ -572,16 +572,16 @@ ul {
   padding: 7px 18px;
 }
 
-.ap-hero {
+.autopark .hero {
   margin-top: 150px;
 }
 
-.ap-hero .hero__title {
+.autopark .hero__title {
   margin-top: 150px;
   margin-bottom: 40px;
 }
 
-.ap-hero .hero__img {
+.autopark .hero__img {
   min-width: 944px;
 }
 
