@@ -1,6 +1,19 @@
-.pr-btn{
-    margin-right: 20px;
-    img{
-        max-height: 60px;
+.pr-hero{
+    .pr-title{
+        margin-bottom: 20px;
+    }
+    .hero__item{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .pr-btn{
+        box-sizing: border-box;
+        background: $orange;
+        border-radius: 16px;
+        padding: 20px 0;
+        text-transform: uppercase;
+        &:hover{
+            transform: scale(1.03);
+        }
     }
 }

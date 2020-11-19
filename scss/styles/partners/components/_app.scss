@@ -7,33 +7,30 @@
             background: $orange;
             border-radius: 16px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
 		}
 		&__img {
-            position: absolute;
-            top: -40px;
-            left: 60px;
-            width: 460px;
-            height: 672px;
+                  position: absolute;
+                  top: -31px;
+                  right: -35px;
 		}
 		&__title {
-            max-width: 60%;
+                  max-width: 60%;
 		}
 		&__description {
-            margin-top: 20px;
-            max-width: 60%;
+                  max-width: 60%;
+                  margin-top: 20px;
         }
         &__row{
-            align-self: center;
-            margin-left: 330px;
-            margin-top: 40px;
+              margin-top: 80px;
         }
 		&__btn {
+                  transition: 0.3s;
             img{
                 margin-right: 20px;
                 height: 60px;
+            }
+            &:hover{
+                  transform: scale(1.05);
             }
 		}
 }
