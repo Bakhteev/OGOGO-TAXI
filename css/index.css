@@ -367,7 +367,7 @@ ul {
   content: '';
   width: 48px;
   height: 48px;
-  background: url(../../img/mobile/bullet-check-icon-1.svg) no-repeat;
+  background: url(../img/mobile/bullet-check-icon-1.svg) no-repeat;
   top: 3px;
   left: 0;
 }
@@ -458,7 +458,12 @@ ul {
 }
 
 .team__title {
-  margin: 130px 0 50px 0;
+  font-size: 40px;
+  margin-top: 200px;
+}
+
+.team__subtitle {
+  margin: 25px 0;
 }
 
 .team__btn {
@@ -1043,6 +1048,20 @@ ul {
     margin-top: 30px;
     width: 400px;
     height: 250px;
+  }
+  .partners .hero__title {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .partners .hero .pr-title {
+    font-size: 40px;
+    padding-top: 25px;
+  }
+  .partners .services__subtitle {
+    max-width: 100%;
+  }
+  .partners .car__content {
+    background-position: 155px 50%;
   }
 }
 
