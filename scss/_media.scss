@@ -104,3 +104,91 @@
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .hero {
+        margin-bottom: 130px;
+        &__title {
+            font-size: 45px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__img {
+            max-width: 350px;
+        }
+    }
+    .mobile {
+        &__title {
+            font-size: 35px;
+        }
+        &__apple {
+            padding-left: 15px;
+        }
+        &__google {
+            margin-left: 15px;
+        }
+    }
+    .team {
+        &__title {
+            font-size: 35px;
+        }
+        &__img {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .hero {
+        margin-top: 50px;
+        &__title {
+            font-size: 30px;
+            line-height:35px;
+        }
+        &__btn {
+            font-size: 15px;
+            width: 180px;
+            height: 50px;
+        }
+        &__img {
+            max-width: 300px;
+        }
+    }
+    .mobile {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+        &__apple {
+            padding-left: 5px;
+        }
+        &__google {
+            margin-left: 0;
+        }
+        &__apple,
+        &__google {
+            max-width: 144px;
+        }
+    }
+    .team {
+        &__title {
+            margin-top: 0;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &__img {
+            margin-top: 40px;
+            max-width: 300px;
+        }
+    }
+}
