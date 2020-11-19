@@ -324,9 +324,9 @@ ul {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transform: scale(1.04);
-      -ms-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .mobile {
@@ -576,67 +576,38 @@ ul {
   margin-top: 150px;
 }
 
+.ap-hero .hero__title {
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
 .ap-hero .hero__img {
   min-width: 944px;
 }
 
-.ap-hero .ap-title {
-  margin-top: 150px;
-  margin-bottom: 20px;
-}
-
 .registration {
   margin-bottom: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-size: cover;
   padding-top: 40px;
-}
-
-.registration__title {
-  margin-top: 200px;
-  color: #fff;
-  font-size: 69px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.registration__subtitle {
-  color: #fff;
-  font-size: 35px;
-  text-transform: uppercase;
-  margin-top: 15px;
-  letter-spacing: 0;
-}
-
-.registration__description {
-  color: #fff;
-  font-size: 39px;
-  letter-spacing: 1px;
 }
 
 .registration__form {
   padding-bottom: 10px;
-  max-width: 420px;
-  background: -webkit-linear-gradient(279deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
-  background: -o-linear-gradient(279deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
-  background: linear-gradient(171deg, #097958 9%, #2b2a40 21%, #2b2a40 65%, #097958 100%);
+  background: #FF7A00;
 }
 
-.registration__form__header {
-  background: rgba(8, 1, 31, 0.911);
+.registration__header {
+  background: #222426;
   padding: 15px 0;
 }
 
-.registration__form__title {
-  color: #40bfa3;
+.registration__title {
+  color: #fff;
   font-size: 48px;
   text-align: center;
   font-weight: normal;
 }
 
-.registration__form__subtitle {
+.registration__subtitle {
   color: #fff;
   font-size: 16px;
   text-align: center;
@@ -645,7 +616,7 @@ ul {
   max-width: 90%;
 }
 
-.registration__form__inputs {
+.registration__inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,7 +629,7 @@ ul {
           align-items: center;
 }
 
-.registration__form__input {
+.registration__input {
   min-width: 372px;
   min-height: 43px;
   -webkit-box-sizing: border-box;
@@ -668,19 +639,34 @@ ul {
   padding: 10px 15px;
   color: #777884;
   font-size: 16px;
-  max-width: 90%;
 }
 
-.registration__form__btn {
-  margin-top: 30px;
+.registration__btn {
+  margin: 30px 0;
+  color: white;
+  background-color: #222426;
 }
 
-.registration__form__description {
+.registration__description {
   color: #f1f1f1;
   font-size: 14px;
   max-width: 90%;
   margin: 35px auto 0;
   text-align: center;
+}
+
+.registration__select {
+  min-width: 372px;
+  min-height: 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #777884;
+  font-size: 16px;
+  outline: none;
+  border: none;
 }
 
 .header__content {
@@ -748,16 +734,25 @@ ul {
           order: -1;
 }
 
-.pr-hero .pr-title {
-  margin-bottom: 20px;
+.partners .hero__content {
+  padding-bottom: 8px;
 }
 
-.pr-hero .hero__item {
+.partners .hero__title {
+  margin: 0;
+}
+
+.partners .hero__subtitle {
+  margin-top: 20px;
+}
+
+.partners .hero__item {
   text-align: center;
+  padding: 0;
   margin: 0 auto;
 }
 
-.pr-hero .pr-btn {
+.partners .hero__btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FF7A00;
@@ -766,7 +761,7 @@ ul {
   text-transform: uppercase;
 }
 
-.pr-hero .pr-btn:hover {
+.partners .hero__btn:hover {
   -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
           transform: scale(1.03);
@@ -881,7 +876,7 @@ ul {
   font-size: 33px;
 }
 
-.pr-services__subtitle {
+.partners .services__subtitle {
   max-width: 350px;
 }
 
@@ -911,7 +906,7 @@ ul {
 
 .app__description {
   max-width: 60%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .app__row {
@@ -1065,14 +1060,6 @@ ul {
   }
 }
 
-
-  .app__btn:hover {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-}
-
 @media screen and (max-width: 375px) {
   .container {
     max-width: 360px;
@@ -1151,4 +1138,3 @@ ul {
     max-width: 300px;
   }
 }
-

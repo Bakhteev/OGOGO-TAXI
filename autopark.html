@@ -8,7 +8,7 @@
     <title>autopark</title>
 </head>
 
-<body>
+<body class="autopark">
     <header class="header">
         <div class="header__content row">
             <div class="header__left">
@@ -63,7 +63,7 @@
     <section class="hero ap-hero">
         <div class="hero__content flex">
             <div class="col-6 hero__item">
-                <h1 class="ap-title title">Хочешь сотрудничать с нами ?</h1>
+                <h1 class="hero__title title">Хочешь сотрудничать с нами ?</h1>
                 <button class="hero__btn btn" id="apBtn">Скачать</button>
             </div>
             <div class="col-6">
@@ -74,18 +74,39 @@
     <section class="registration">
         <div class="container">
             <form class="registration__form">
-                <div class="registration__form__header">
-                    <h2 class="registration__form__title">Разместите информацию о своем автопарке</h2>
+                <div class="registration__header">
+                    <h2 class="registration__title">Разместите информацию о своем автопарке</h2>
                 </div>
-                <h3 class="registration__form__subtitle">Наш менеджер свяжется с вами в течение 24 часов</h3>
-                <div class="registration__form__inputs">
-                    <input type="text" placeholder="Имя" class="registration__form__input">
-                    <input type="text" placeholder="Фамилия" class="registration__form__input">
-                    <input type="number" placeholder="Номер телефона" class="registration__form__input">
-                    <input type="text" placeholder="Названия парка" class="registration__form__input">
-                    <input type="text" placeholder="Город" class="registration__form__input">
+                <h3 class="registration__subtitle">Наш менеджер свяжется с вами в течение 24 часов</h3>
+                <div class="registration__inputs">
+                    <input type="text" placeholder="Имя" class="registration__input">
+                    <input type="text" placeholder="Фамилия" class="registration__input">
+                    <input type="tel" placeholder="Номер телефона" class="registration__input">
+                    <input type="text" placeholder="Названия парка" class="registration__input">
+                    <select name="city" id="City" class="registration__select">
+                        <option value="1">Бишкек</option>
+                        <option value="2">Ош</option>
+                        <!-- <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                        <option value="11"></option>
+                        <option value="12"></option>
+                        <option value="13"></option>
+                        <option value="14"></option>
+                        <option value="15"></option>
+                        <option value="16"></option>
+                        <option value="17"></option>
+                        <option value="18"></option>
+                        <option value="19"></option>
+                        <option value="20"></option> -->
+                    </select>
+                    <button class="registration__btn btn">Подключиться</button>
                 </div>
-                <button class="registration__form__btn btn">Подключиться</button>
             </form>
         </div>
     </section>
@@ -137,7 +158,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <script src="js/autopark.js" type="module"></script>
     <script src="./js/Jquery3.4.1.min.js"></script>
 </body>
