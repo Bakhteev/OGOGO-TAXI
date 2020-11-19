@@ -288,6 +288,10 @@ ul {
   margin: 94px 0 150px 0;
 }
 
+.hero__content {
+  overflow-x: hidden;
+}
+
 .hero__title {
   margin: 250px 0 24px 0;
 }
@@ -920,6 +924,12 @@ ul {
   height: 60px;
 }
 
+.app__btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media screen and (max-width: 414px) {
   html, body {
     overflow-x: hidden;
@@ -1034,9 +1044,83 @@ ul {
     width: 400px;
     height: 250px;
   }
+}
 
-.app__btn:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .hero {
+    margin-bottom: 130px;
+  }
+  .hero__title {
+    font-size: 45px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__img {
+    max-width: 350px;
+  }
+  .mobile__title {
+    font-size: 35px;
+  }
+  .mobile__apple {
+    padding-left: 15px;
+  }
+  .mobile__google {
+    margin-left: 15px;
+  }
+  .team__title {
+    font-size: 35px;
+  }
+  .team__img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .hero {
+    margin-top: 50px;
+  }
+  .hero__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .hero__btn {
+    font-size: 15px;
+    width: 180px;
+    height: 50px;
+  }
+  .hero__img {
+    max-width: 300px;
+  }
+  .mobile__title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  .mobile__apple {
+    padding-left: 5px;
+  }
+  .mobile__google {
+    margin-left: 0;
+  }
+  .mobile__apple, .mobile__google {
+    max-width: 144px;
+  }
+  .team__title {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .team__img {
+    margin-top: 40px;
+    max-width: 300px;
+  }
 }
