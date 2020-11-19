@@ -1,5 +1,51 @@
 .header {
     margin: 0 16px;
+    &__burger {
+        position: fixed;
+        display: none;
+        width: 50px;
+        height: 50px;
+        background:$orange;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        &-line {
+            position: relative;
+            margin: 50% 0 0 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: #FFFFFF; 
+            &::before,
+            &::after {
+                content:'';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background:#FFFFFF;
+            }
+            &::before {
+                top: -8px;
+            }
+            &::after {
+                top: 8px;
+            }
+            &.active {
+                background-color:$orange;
+            }
+            &.active::before {
+                top: 0;
+                transform: rotate(-45deg);
+                transition: 0.3s;
+            }
+            &.active::after {
+                top: 0;
+                transform: rotate(45deg);
+                transition: 0.3s;
+            }
+        }
+    }
     &__content {
         justify-content: space-around;
         margin-top: 20px;
@@ -24,18 +70,19 @@
         &::before {
             content: "";
             position: absolute;
-            left: -1;
+            left: 0;
             bottom: -10px;
             width: 0;
-            height: 1px;
-            background: $black;
+            height: 2px;
+            background: $orange;
             transition: 0.3s;
         }
         &:hover::before {
             width: 100%;
         }
         &:hover {
-            color:$black;
+            color:$orange;
+            transition: 0.3s;
         }
     }
     &__language{
@@ -78,5 +125,3 @@
         order: -1;
     }
 }
-
- 
