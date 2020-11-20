@@ -158,6 +158,24 @@
             }
         }
     }
+    .autopark {
+        .hero {
+            margin: 0 0 100px 0;
+            &__title {
+                max-width: 360px;
+                margin: 50px auto;
+            }
+            &__img {
+                min-width: 300px;
+                height: 250px;
+            }
+        }
+        .registration {
+            &__title {
+                font-size: 40px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -208,6 +226,19 @@
             }
             &__btn {
                 margin-bottom: 10px;
+            }
+        }
+    }
+    .autopark {
+        .hero {
+            margin-bottom: 75px;
+        }
+        .registration {
+            &__input {
+                min-width: 342px;
+            }
+            &__select {
+                min-width: 342px;
             }
         }
     }
@@ -264,6 +295,19 @@
         .car {
             &__title {
                 font-size: 35px;
+            }
+        }
+    }
+    .autopark {
+        .registration {
+            &__title {
+                font-size: 35px;
+            }
+            &__input {
+                min-width: 285px;
+            }
+            &__select {
+                min-width: 285px;
             }
         }
     }
