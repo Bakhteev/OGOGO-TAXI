@@ -52,7 +52,6 @@ export const Scroll = (top, left) => {
     
 //     return gsap
 //         .timeline({ delay: 1}) // More readable to put it here
-//         .add('start') // Use a label to sync screen and content animation
 //         .to(loadingItem, {
 //             duration: 0.5,
 //             scaleY: 0,
@@ -72,23 +71,25 @@ export const Scroll = (top, left) => {
 // //         }, n)
 // //     });
 // // }
-// barba.init({
-   
-//     transitions: [{
-//         async leave(data) {
+// $(function () {
+//     barba.init({
+
+//         transitions: [{
+//             async leave(data) {
 
 
-//             await pageTransitionIn()
+//                 await pageTransitionIn()
 
-//             data.current.container.remove()
-//         },
+//                 data.current.container.remove()
+//             },
+//             async enter(data) {
+//                 await pageTransitionOut(data.next.container)
 
-//         async enter(data) {
-//             await pageTransitionOut(data.next.container)
-//         }
+//             }
 
-//     }]
-// });
+//         }]
+//     });
+// })
 
 // // const loadingScreen = document.querySelector('.loading-screen')
 // // const mainNavigation = document.querySelector('.main-navigation')
@@ -180,6 +181,44 @@ export const Scroll = (top, left) => {
 // //     });
 
 // // });
+// // barba.init({
+// //     sync: true,
+// //     transitions: [{
+// //         name: 'opacity-transition',
+// //         leave(data) {
+// //             from: {
+// //                 nameSpace: [
+// //                     'home'
+// //                 ]
+// //             }
 
+// //             to: {
+// //                 nameSpace: [
+// //                     'partners'
+// //                 ]
+// //             }
+            
+// //         },
+// //         enter(data) {
+            
+// //         }
+// //     }]
+// // });
+
+// // barba.init({
+// //     transitions: [{
+// //         name: 'custom-transition',
+// //         from: {
+// //             nameSpace: [
+// //                 'home'
+// //             ]
+// //         },
+// //         to: {
+// //             nameSpace: [
+// //                 'home'
+// //             ]
+// //         }
+// //     }]
+// // });
 
 //==========================================================================================
