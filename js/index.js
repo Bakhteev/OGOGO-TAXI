@@ -1,5 +1,4 @@
 // languages
-
 let language = document.querySelector('.header__language');
 let languageItem = document.querySelectorAll('.header__language__item');
 
@@ -17,9 +16,7 @@ languageItem.forEach(language => {
         language.classList.toggle('order')
     })
 })
-
 //=======================================================================================
-
 //Burger
 
 $('.header__burger').on('click', function() {
@@ -30,7 +27,6 @@ $('.header__burger').on('click', function() {
 })
 
 //========================================================================================
-
 // scroll smooth
 export const Scroll = (top, left) => {
     window.scroll({
@@ -39,18 +35,4 @@ export const Scroll = (top, left) => {
         behavior: 'smooth'
     });
 };
-
-// let scrollBtnPartners = document.getElementById('scroll');
-// let scrollBtnAutopark = document.getElementById('apBtn');
-// let partnersTarget = document.querySelector('.app');
-// let autoparkTarget = document.querySelector('.registration');
-
-// console.log(autoparkTarget);
-// let autoparkTargetCoords = autoparkTarget.getBoundingClientRect();
-// let partnersTargetCoords = partnersTarget.getBoundingClientRect();
-// let autoparkTargetCoordsTop = [autoparkTargetCoords.top - 100];
-// let partnersTargetCoordsTop = [partnersTargetCoords.top - 100];
-
-// scrollBtnPartners.addEventListener('click', () => Scroll(partnersTargetCoordsTop));
-// scrollBtnAutopark.addEventListener('click', () => Scroll(autoparkTargetCoordsTop));
 //========================================================================================
