@@ -1,15 +1,24 @@
+
+.partners{
+    .hero__content{
+        padding-bottom: 8px;
+
 .partners {
     .hero__title {
         margin: 0 auto;
     }
-    .pr-title{
-        margin-bottom: 20px;
+    .hero__title{
+        margin: 0;
     }
-    .hero__item{
+    .hero__subtitle{
+        margin-top: 20px;
+    }
+     .hero__item{
         text-align: center;
+        padding: 0;
         margin: 0 auto;
     }
-    .pr-btn{
+    .hero__btn{
         box-sizing: border-box;
         background: $orange;
         border-radius: 16px;
