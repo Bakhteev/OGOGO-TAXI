@@ -40,17 +40,9 @@ export const Scroll = (top, left) => {
     });
 };
 
-// let scrollBtnPartners = document.getElementById('scroll');
-// let scrollBtnAutopark = document.getElementById('apBtn');
-// let partnersTarget = document.querySelector('.app');
-// let autoparkTarget = document.querySelector('.registration');
+let scrollBtnIndex = document.getElementById('indexBtn');
+let indexTarget = document.querySelector('.mobile');
+let indexTargetCoords = indexTarget.getBoundingClientRect();
+let indexTargetCoordsTop = [indexTargetCoords.top - 100]
 
-// console.log(autoparkTarget);
-// let autoparkTargetCoords = autoparkTarget.getBoundingClientRect();
-// let partnersTargetCoords = partnersTarget.getBoundingClientRect();
-// let autoparkTargetCoordsTop = [autoparkTargetCoords.top - 100];
-// let partnersTargetCoordsTop = [partnersTargetCoords.top - 100];
-
-// scrollBtnPartners.addEventListener('click', () => Scroll(partnersTargetCoordsTop));
-// scrollBtnAutopark.addEventListener('click', () => Scroll(autoparkTargetCoordsTop));
-//========================================================================================
+scrollBtnIndex.addEventListener('click', () => Scroll(indexTargetCoordsTop));
