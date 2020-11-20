@@ -748,16 +748,20 @@ ul {
           order: -1;
 }
 
-.pr-hero .pr-title {
+.partners .hero__title {
+  margin: 0 auto;
+}
+
+.partners .pr-title {
   margin-bottom: 20px;
 }
 
-.pr-hero .hero__item {
+.partners .hero__item {
   text-align: center;
   margin: 0 auto;
 }
 
-.pr-hero .pr-btn {
+.partners .pr-btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FF7A00;
@@ -766,7 +770,7 @@ ul {
   text-transform: uppercase;
 }
 
-.pr-hero .pr-btn:hover {
+.partners .pr-btn:hover {
   -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
           transform: scale(1.03);
@@ -998,7 +1002,7 @@ ul {
     display: none;
   }
   .hero {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .hero__content {
     -ms-flex-wrap: wrap;
@@ -1049,6 +1053,9 @@ ul {
     width: 400px;
     height: 250px;
   }
+  .partners .hero {
+    margin-top: 50px;
+  }
   .partners .hero__title {
     max-width: 300px;
     margin: 0 auto;
@@ -1060,16 +1067,36 @@ ul {
   .partners .services__subtitle {
     max-width: 100%;
   }
-  .partners .car__content {
-    background-position: 155px 50%;
+  .partners .car__title {
+    font-size: 40px;
+    max-width: 100%;
+    margin-bottom: 180px;
   }
-}
-
-
-  .app__btn:hover {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+  .partners .car__content {
+    text-align: center;
+    padding: 56px 0 100px 30px;
+    background-position: 155px 60%;
+  }
+  .partners .app__content {
+    text-align: center;
+    padding: 0;
+  }
+  .partners .app__title {
+    padding-top: 100px;
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .partners .app__description {
+    max-width: 100%;
+  }
+  .partners .app__img {
+    display: none;
+  }
+  .partners .app__row {
+    margin-top: 40px;
+  }
+  .partners .app__btn img {
+    margin-right: 0;
   }
 }
 
@@ -1105,15 +1132,21 @@ ul {
   .team__img {
     width: 350px;
   }
+  .partners .car__content {
+    padding-left: 0;
+  }
+  .partners .app__title {
+    padding-top: 50px;
+  }
+  .partners .app__btn {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .container {
     max-width: 300px;
     margin: 0 auto;
-  }
-  .hero {
-    margin-top: 50px;
   }
   .hero__title {
     font-size: 30px;
@@ -1150,5 +1183,7 @@ ul {
     margin-top: 40px;
     max-width: 300px;
   }
+  .partners .car__title {
+    font-size: 35px;
+  }
 }
-
