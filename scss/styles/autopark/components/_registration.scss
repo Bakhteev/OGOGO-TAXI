@@ -2,10 +2,12 @@
 	margin-bottom: 75px;
 	padding-top: 40px;
 	&__form {
+		border-radius: 16px;
 		padding-bottom: 10px;
 		background: $orange;
 	}
 	&__header{
+		border-radius: 16px 16px 0 0;
 		background: $black;
 		padding: 15px 0;
 	}
