@@ -1222,25 +1222,3 @@ ul {
     min-width: 285px;
   }
 }
-
-.loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  z-index: 10;
-  height: 100Vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  margin: 0;
-  pointer-events: none;
-}
-
-.loading__item {
-  -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
-  background: #FF7A00;
-  width: 20%;
-}
