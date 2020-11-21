@@ -1,5 +1,4 @@
 // languages
-
 let language = document.querySelector('.header__language');
 let languageItem = document.querySelectorAll('.header__language__item');
 
@@ -17,9 +16,7 @@ languageItem.forEach(language => {
         language.classList.toggle('order')
     })
 })
-
 //=======================================================================================
-
 //Burger
 
 $('.header__burger').on('click', function() {
@@ -30,7 +27,6 @@ $('.header__burger').on('click', function() {
 })
 
 //========================================================================================
-
 // scroll smooth
 export const Scroll = (top, left) => {
     window.scroll({
@@ -39,6 +35,9 @@ export const Scroll = (top, left) => {
         behavior: 'smooth'
     });
 };
+//========================================================================================
+
+
 
 let scrollBtnIndex = document.getElementById('indexBtn');
 let indexTarget = document.querySelector('.mobile');
@@ -46,3 +45,4 @@ let indexTargetCoords = indexTarget.getBoundingClientRect();
 let indexTargetCoordsTop = [indexTargetCoords.top - 100]
 
 scrollBtnIndex.addEventListener('click', () => Scroll(indexTargetCoordsTop));
+

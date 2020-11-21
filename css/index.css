@@ -642,9 +642,19 @@ ul {
 }
 
 .registration__btn {
+  font-size: 20px;
   margin: 30px 0;
   color: white;
   background-color: #222426;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.registration__btn:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .registration__description {
@@ -1213,4 +1223,26 @@ ul {
   .autopark .registration__select {
     min-width: 285px;
   }
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  height: 100Vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.loading__item {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  background: #FF7A00;
+  width: 20%;
 }
