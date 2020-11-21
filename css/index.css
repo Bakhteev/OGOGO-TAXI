@@ -591,11 +591,13 @@ ul {
 }
 
 .registration__form {
+  border-radius: 16px;
   padding-bottom: 10px;
   background: #FF7A00;
 }
 
 .registration__header {
+  border-radius: 16px 16px 0 0;
   background: #222426;
   padding: 15px 0;
 }
@@ -1099,6 +1101,20 @@ ul {
   .partners .app__btn img {
     margin-right: 0;
   }
+  .autopark .hero {
+    margin: 0 0 100px 0;
+  }
+  .autopark .hero__title {
+    max-width: 360px;
+    margin: 50px auto;
+  }
+  .autopark .hero__img {
+    min-width: 300px;
+    height: 250px;
+  }
+  .autopark .registration__title {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1141,6 +1157,15 @@ ul {
   }
   .partners .app__btn {
     margin-bottom: 10px;
+  }
+  .autopark .hero {
+    margin-bottom: 75px;
+  }
+  .autopark .registration__input {
+    min-width: 342px;
+  }
+  .autopark .registration__select {
+    min-width: 342px;
   }
 }
 
@@ -1186,6 +1211,15 @@ ul {
   }
   .partners .car__title {
     font-size: 35px;
+  }
+  .autopark .registration__title {
+    font-size: 35px;
+  }
+  .autopark .registration__input {
+    min-width: 285px;
+  }
+  .autopark .registration__select {
+    min-width: 285px;
   }
 }
 

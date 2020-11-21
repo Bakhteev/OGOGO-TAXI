@@ -37,3 +37,11 @@ export const Scroll = (top, left) => {
 };
 //========================================================================================
 
+
+let scrollBtnIndex = document.getElementById('indexBtn');
+let indexTarget = document.querySelector('.mobile');
+let indexTargetCoords = indexTarget.getBoundingClientRect();
+let indexTargetCoordsTop = [indexTargetCoords.top - 100]
+
+scrollBtnIndex.addEventListener('click', () => Scroll(indexTargetCoordsTop));
+
