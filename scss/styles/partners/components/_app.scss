@@ -18,11 +18,11 @@
 		}
 		&__description {
                   max-width: 60%;
-                  margin-top: 20px;
-        }
-        &__row{
-              margin-top: 80px;
-        }
+                  margin-top: 40px;
+            }
+            &__row{
+                  margin-top: 80px;
+            }
 		&__btn {
                   transition: 0.3s;
             img{
@@ -32,6 +32,6 @@
             &:hover{
                   transform: scale(1.05);
             }
-		}
+	}
 }
 
