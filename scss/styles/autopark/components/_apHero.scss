@@ -9,6 +9,12 @@
     .hero__img{
         min-width: 944px;
     }
+    #apBtn{
+        width: auto;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
 }
 
 

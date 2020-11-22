@@ -585,6 +585,16 @@ ul {
   min-width: 944px;
 }
 
+.autopark #apBtn {
+  width: auto;
+}
+
+.autopark #apBtn:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .registration {
   margin-bottom: 75px;
   padding-top: 40px;
