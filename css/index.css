@@ -952,13 +952,47 @@ ul {
           transform: scale(1.05);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
   html, body {
     overflow-x: hidden;
   }
   html.lock {
     overflow-y: hidden;
   }
+  .container {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  .hero__img {
+    max-width: 750px;
+  }
+  .hero__title {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  .mobile__title {
+    max-width: 555px;
+    font-size: 40px;
+  }
+  .mobile__list {
+    padding-bottom: 30px;
+  }
+  .services__subtitle {
+    font-size: 16px;
+  }
+  .partners .app__title {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+  .partners .app__description {
+    max-width: 50%;
+  }
+  .partners .app__row {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .container {
     max-width: 400px;
     margin: 0 auto;
