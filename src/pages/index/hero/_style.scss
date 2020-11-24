@@ -19,13 +19,7 @@
     }
     &__btn {
         font-size: 20px;
-        color:$black;
         width: 230px;
         height: 62px;
-        transition: 0.3s;
-        &:hover {
-            transition: 0.3s;
-            transform: scale(1.03);
-        }
     }
 }
