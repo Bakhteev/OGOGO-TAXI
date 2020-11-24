@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import autoparkImg from '../../../assets/img/pagesImg/autopark/autoparkImg.jpg';
 
+
 function Hero() {
+    const [pos, setPos] = useState(0)
+
+    const Scroll = (top, left) => {
+        window.scroll({
+            top: top,
+            left: left,
+            behavior: 'smooth'
+        });
+    };
     return (
         <section class="hero">
             <div class="hero__content flex">

@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import Languages from './languages';
-import Burger from './burger'
+import { headerObj } from './const';
+import HeaderItem from './item'
+
 
 const Header = () => {
+
+    const [burger, setBurger] = useState(false)
+    const [drop, setDrop] = useState(false)
+
+    const Burger = () => {
+        burger === false ? setBurger(true) : setBurger(false)
+    };
+    const Drop = () =>{
+        drop === false ? setDrop(true) : setDrop(false)
+    };
     return(
         <header className="header">
             <div className="header__content row">
@@ -38,18 +49,29 @@ const Header = () => {
                 </div>
                 <div className="header__middle">
                     <nav className="header__nav">
-                        <div id="burger" className="header__burger">
-                            <span id="header__burger-line" className="header__burger-line"></span>
+                        <div id="burger"
+                            onClick={() => Burger()}
+                            className={`header__burger ${ burger === false ? '' : 'active'}`}
+                         >
+                            <span id="header__burger-line" className={`header__burger-line ${burger === false ? '' : 'active'}`}></span>
                         </div>
-                        <ul id="header__menu" className="header__menu row">
-                            <li className="header__item"><Link to='/' className="header__link"> Пользователям</Link></li>
-                            <li className="header__item"><Link to='/partners' className="header__link">Водителям</Link></li>
-                            <li className="header__item"><Link to='/autopark' className="header__link">Таксопаркам</Link></li>
+                        <ul id="header__menu" className={`header__menu row ${burger === false ? '' : 'active'}`}>
+                            {headerObj.map((item) =>{
+                                return(
+                                    <HeaderItem 
+                                        link = {item.link}
+                                        text = {item.text}
+                                    />
+                                )
+                            })}
                         </ul>
                     </nav>
                 </div>
                 <div className="header__right row">
-                    <ul className="header__language">
+                    <ul 
+                    onClick={() => Drop() }
+                    className={`header__language ${ drop === false ? '' : 'drop' }`}
+                    >
                         <li className="header__language__item">RU</li>
                         <li className="header__language__item">KG</li>
                     </ul>
@@ -58,8 +80,6 @@ const Header = () => {
         </header>
     );
 }
-
-// Languages();
 
 export default Header;
 
