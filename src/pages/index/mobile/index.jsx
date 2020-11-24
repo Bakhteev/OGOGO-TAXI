@@ -7,7 +7,7 @@ const Mobile = () => {
     return (
         <section className="mobile">
             <div className="container">
-                <div clasNames="mobile__content">
+                <div className="mobile__content">
                     <h2 className="mobile__title title">Заказывайте такси через мобильное приложение </h2>
                     <ul className="mobile__list">
                         <li className="mobile__item">Низкие цены - быстрая подача </li>

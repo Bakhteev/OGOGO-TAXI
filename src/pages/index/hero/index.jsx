@@ -10,7 +10,7 @@ const Hero = () => {
                     <h3 className="hero__subtitle subtitle">Перемещайся по городу с комфортом.</h3>
                     <button id="indexBtn" className="hero__btn btn">Скачать</button>
                 </div>
-                <div className="col-6">
+                <div className="col-6 hero__item">
                     <img className="hero__img" src={rider} alt=""></img>
                 </div>
             </div>
