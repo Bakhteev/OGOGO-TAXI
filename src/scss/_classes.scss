@@ -1,0 +1,47 @@
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+}
+.col-6{
+    width: 50%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-3{
+    width: 25%;
+}
+.title{
+    color: #222426;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 55px;
+    letter-spacing: -0.8px;
+}
+.subtitle{
+    color: #454754;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: -0.2px;
+}
+.btn{
+    color: #292200;
+    background-color: #FF7A00;
+    border-radius: 16px;
+    padding: 16px 40px;
+}
+.btn-grey {
+    color: rgba(34,36,38,.8);
+    font-size: 16px;
+    background-color:#f1f1f1;
+    border-radius: 7px;
+    padding: 12px 16px;
+}

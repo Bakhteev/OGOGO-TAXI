@@ -1,0 +1,127 @@
+.header {
+    margin: 40px 16px 0 16px;
+    &__burger {
+        position: fixed;
+        display: none;
+        width: 50px;
+        height: 50px;
+        background: $orange;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        &-line {
+            position: relative;
+            margin: 50% 0 0 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: #FFFFFF; 
+            &::before,
+            &::after {
+                content:'';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background:#FFFFFF;
+            }
+            &::before {
+                top: -8px;
+            }
+            &::after {
+                top: 8px;
+            }
+            &.active {
+                background-color:$orange;
+            }
+            &.active::before {
+                top: 0;
+                transform: rotate(-45deg);
+                transition: 0.3s;
+            }
+            &.active::after {
+                top: 0;
+                transform: rotate(45deg);
+                transition: 0.3s;
+            }
+        }
+    }
+    &__content {
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    &__logo {
+        padding-top:10px;
+    }
+    &__middle {
+        padding-top: 10px;
+    }
+    &__right {
+        height: 38px;
+    }
+    &__item {
+        margin: 0 10px;
+    }
+    &__link {
+        position: relative;
+        font-size: 16px;
+        color:$grey;
+        margin: 0 12px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background: $orange;
+            transition: 0.3s;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+        &:hover {
+            color:$orange;
+            transition: 0.3s;
+        }
+    }
+    &__language{
+        overflow-y: hidden;
+        height: 29px;
+        transition: 0.3s;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        user-select: none;
+        &::before{
+            position: absolute;
+            content:'';
+            width: 7px;
+            height: 7px;
+            border: 2px solid $black;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg);
+            right: 25px;
+            top: 40%;
+            transition: 0.3s;
+            transform-origin: top;
+        }
+        &__item{
+            font-size: 16px;
+            color:$grey;
+            padding: 10px 45px 0 0;
+        }
+    }
+    .header__language.drop{
+        height: auto;
+        overflow-y: auto;
+        &::before{
+            transform: rotate(-133deg);
+        }
+    }
+    .header__language__item.order{
+        order: -1;
+    }
+}
