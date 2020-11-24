@@ -8,7 +8,7 @@ function Hero() {
                     <h1 className="hero__title title">Зарабатывай вместе с Огого Такси:</h1>
                     <h2 className="title">Онлайн регистрация через мобильное приложение!</h2>
                     <h3 className="hero__subtitle subtitle">Cвободный график, стабильный заработок</h3>
-                    <button className="hero__btn" id="scroll">Cкачать</button>
+                    <button className="hero__btn btn" id="scroll">Cкачать</button>
                 </div>
             </div>
         </section>

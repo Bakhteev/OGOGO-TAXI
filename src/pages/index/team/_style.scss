@@ -7,14 +7,6 @@
     &__subtitle {
         margin: 25px 0;
     }
-    &__btn {
-        background: $orange;
-        transition: 0.3s;
-        &:hover{
-            transition: 0.3s;
-            transform: scale(1.04);
-        }
-    }
     &__img {
         width: 560px;
         height: 600px;

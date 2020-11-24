@@ -43,11 +43,19 @@
     &__apple {
         width: 144px;
         height: 48px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.03);
+        }
     }
     &__google {
         margin-left: 16px;
         width: 168px;
         height: 48px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.03);
+        }
     }
 }
 

@@ -2,19 +2,19 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <section class="registration">
-            <div class="container">
-                <form class="registration__form">
-                    <div class="registration__header">
-                        <h2 class="registration__title">Разместите информацию о своем автопарке</h2>
+        <section className="registration">
+            <div className="container">
+                <form className="registration__form">
+                    <div className="registration__header">
+                        <h2 className="registration__title">Разместите информацию о своем автопарке</h2>
                     </div>
-                    <h3 class="registration__subtitle">Наш менеджер свяжется с вами в течение 24 часов</h3>
-                    <div class="registration__inputs">
-                        <input type="text" placeholder="Имя" class="registration__input"/>
-                        <input type="text" placeholder="Фамилия" class="registration__input"/>
-                        <input type="tel" placeholder="Номер телефона" class="registration__input"/>
-                        <input type="text" placeholder="Названия парка" class="registration__input"/>
-                        <select name="city" id="City" class="registration__select">
+                    <h3 className="registration__subtitle">Наш менеджер свяжется с вами в течение 24 часов</h3>
+                    <div className="registration__inputs">
+                        <input type="text" placeholder="Имя" className="registration__input"/>
+                        <input type="text" placeholder="Фамилия" className="registration__input"/>
+                        <input type="tel" placeholder="Номер телефона" className="registration__input"/>
+                        <input type="text" placeholder="Названия парка" className="registration__input"/>
+                        <select name="city" id="City" className="registration__select">
                             <option value="1">Бишкек</option>
                             <option value="2">Ош</option>
                             {/* <option value="3"></option>
@@ -36,12 +36,12 @@ const Form = () => {
                             <option value="19"></option>
                             <option value="20"></option>  */}
                         </select>
-                        <button class="registration__btn btn">Подключиться</button>
+                        <button className="registration__btn btn">Подключиться</button>
                     </div>
                 </form>
             </div>
         </section>
-    )
+    );
 }
 
 export default Form;
