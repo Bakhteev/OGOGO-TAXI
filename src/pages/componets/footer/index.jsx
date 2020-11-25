@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { icons, contacts } from './const'
+import { navObj } from '../header/const'
 import logo from '../../../assets/img/footer/footer-logo-light.svg';
-import facebook from '../../../assets/img/footer/facebook.svg'
-import instagram from '../../../assets/img/footer/instagram.svg'
-import twitter from '../../../assets/img/footer/twitter.svg'
 import apple from "../../../assets/img/mobile/aplle.png";
 import googlePlay from '../../../assets/img/mobile/google-play.png';
 
@@ -25,28 +24,38 @@ const Footer = () => {
                         </div>
                     </div>
                 <hr/>
-                <div className="footer__bottom row">
-                    <ul className="footer__list">
-                        <h6 className="footer__description">О нас</h6>
-                        <p className="footer__item">Огого такси это онлайн сервис вызова авто в Кыргызстане !</p>
-                        <div className="footer__social row">
-                            <a href="#"><img className="footer__link" src={facebook} /></a>
-                            <a href="#"><img className="footer__link" src={instagram} /></a>
-                            <a href="#"><img className="footer__link" src={twitter} /></a>
-                        </div>
-                    </ul>
-                    <ul className="footer__list row">
-                        <h6 className="footer__description">Ссылки</h6>
-                        <Link to="/" className="footer__item">Пользователям</Link>
-                        <Link to="/partners" className="footer__item">Водителям</Link>
-                        <Link to="/autopark" className="footer__item">Таксопаркам</Link>
-                    </ul>
-                    <ul className="footer__list">
-                        <h6 className="footer__description">Контакты</h6>
-                        <li className="footer__item">Ибраимова 115/1</li>
-                        <li className="footer__item">+996000000000</li>
-                        <li className="footer__item">ogogo.taxi@gmail.com</li>
-                    </ul>
+                    <div className="footer__bottom row">
+                        <ul className="footer__list">
+                            <h6 className="footer__description">О нас</h6>
+                            <p className="footer__item">Огого такси это онлайн сервис вызова авто в Кыргызстане !</p>
+                            <div className="footer__social row">
+                                {icons.map((item) =>{
+                                    return(
+                                        <a href={item.link} className="footer__link" target="_blank">
+                                            {item.icon}
+                                        </a>
+                                    );
+                                })}
+                            </div>
+                        </ul>
+                        <ul className="footer__list row">
+                            <h6 className="footer__description">Ссылки</h6>
+                            {navObj.map((item) =>{
+                                    return(
+                                        <Link
+                                            to={item.link} className="footer__item">{item.text}
+                                        </Link>
+                                    );
+                                })}
+                        </ul>
+                        <ul className="footer__list">
+                            <h6 className="footer__description">Контакты</h6>
+                            {contacts.map((item) =>{
+                                return(
+                                    <a className="footer__item" href={item.link}>{item.text}</a>
+                                );
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>

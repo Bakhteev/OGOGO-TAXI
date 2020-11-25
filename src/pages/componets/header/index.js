@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { headerObj } from './const';
-import HeaderItem from './item'
+import { navObj } from './const';
+
 
 
 const Header = () => {
 
     const [burger, setBurger] = useState(false)
     const [drop, setDrop] = useState(false)
+    const [elIndex, setElIndex] = useState(0)
 
     const Burger = () => {
         burger === false ? setBurger(true) : setBurger(false)
@@ -15,6 +16,9 @@ const Header = () => {
     const Drop = () =>{
         drop === false ? setDrop(true) : setDrop(false)
     };
+    const HandleClick = (index) => {
+        setElIndex(index);
+    }; 
     return(
         <header className="header">
             <div className="header__content row">
@@ -56,12 +60,15 @@ const Header = () => {
                             <span id="header__burger-line" className={`header__burger-line ${burger === false ? '' : 'active'}`}></span>
                         </div>
                         <ul id="header__menu" className={`header__menu row ${burger === false ? '' : 'active'}`}>
-                            {headerObj.map((item) =>{
+                            {navObj.map((item, index) =>{
                                 return(
-                                    <HeaderItem 
-                                        link = {item.link}
-                                        text = {item.text}
-                                    />
+                                    <li
+                                        onClick={() => HandleClick(index)} 
+                                        className="header__item">
+                                        <Link
+                                            to={item.link} className={`header__link ${index === elIndex ? 'active' : '' }`}>{item.text}
+                                        </Link>
+                                    </li>
                                 )
                             })}
                         </ul>
