@@ -1,4 +1,4 @@
-export const headerObj = [
+export const navObj = [
     {
         link: '/',
         text: 'Пользователям',

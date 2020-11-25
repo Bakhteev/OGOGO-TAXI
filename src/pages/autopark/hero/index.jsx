@@ -13,14 +13,14 @@ function Hero() {
         });
     };
     return (
-        <section class="hero">
-            <div class="hero__content flex">
-                <div class="col-6 hero__item">
-                    <h1 class="hero__title title">Хочешь сотрудничать с нами ?</h1>
-                    <button class="hero__btn btn" id="apBtn">Заполнить анкету</button>
+        <section className="hero">
+            <div className="hero__content flex">
+                <div className="col-6 hero__item">
+                    <h1 className="hero__title title">Хочешь сотрудничать с нами ?</h1>
+                    <button className="hero__btn btn" id="apBtn">Заполнить анкету</button>
                 </div>
-                <div class="col-6">
-                    <img class="hero__img" src={autoparkImg} alt=""/>
+                <div className="col-6">
+                    <img className="hero__img" src={autoparkImg} alt=""/>
                 </div>
             </div>
         </section>

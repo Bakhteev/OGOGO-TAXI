@@ -46,6 +46,11 @@
             }
         }
     }
+    .footer{
+        &__content{
+            padding: 0 30px;
+        }
+    }
 
 }
 @media screen and (max-width:900px){
@@ -84,8 +89,18 @@
         }
     }
     .footer{
-        &__content{
-            padding: 0 30px;
+        text-align: center;
+        &__top{
+            justify-content: space-around;
+        }
+        &__bottom{
+            justify-content: space-around;
+        }
+        &__list:first-child{
+            min-width: 100%;
+        }
+        &__social{
+            justify-content: center;
         }
     }
     .car{
@@ -114,19 +129,9 @@
 }
 
 @media screen and (max-width:770px){
-    .footer{
-        text-align: center;
-        &__top{
-            justify-content: space-around;
-        }
-        &__bottom{
-            justify-content: space-around;
-        }
-        &__list:first-child{
-            min-width: 100%;
-        }
-        &__social{
-            justify-content: center;
+    .hero{
+        &__title{
+            margin-top: 0;
         }
     }
     .car{
@@ -137,7 +142,7 @@
     .app{
         &__img{
             top: 106px;
-            right: -103px;
+            right: -130px;
             max-width: 389px;
         }
     }
@@ -184,6 +189,9 @@
             line-height: 70px;
             &::before {
                 display: none;
+            }
+            &.active{
+                color: $grey;
             }
         }
         &__left,
@@ -318,6 +326,9 @@
         &__social {
             padding: 15px 0;
             display: inline-block;
+        }
+        &__list{
+            margin-left: 0;
         }
     }
     .partners {
