@@ -12,9 +12,9 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__content">
                     <div className="footer__top row">
-                        <div className="footer__left">
+                        <Link to="/" className="footer__left">
                             <img src={logo} alt="" className="footer__logo"/>
-                        </div>
+                        </Link>
                         <div className="footer__right">
                         <a href="https://itunes.apple.com/ua/app/id654646098" target="_blank">
                             <img className="mobile__apple"src={apple}/>

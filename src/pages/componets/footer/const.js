@@ -20,7 +20,7 @@ export const icons = [
                     d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
                 </path>
             </svg>,
-        link: '#'
+        link: 'https://www.instagram.com/ogogo_academy/'
     },
     {
         icon: <svg
@@ -34,7 +34,7 @@ export const icons = [
 ]
 export const contacts = [
     {
-        link: '#',
+        link: 'https://www.google.com/maps/place/IT+Academy+(IT+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F)+%D0%BF%D1%80%D0%B8+%D0%9A%D0%90%D0%A0%D0%9F%D0%9E%D0%A3/@42.8730465,74.6168253,17z/data=!4m12!1m6!3m5!1s0x389eb7df8ad88681:0x8c8be4738821a7b3!2zSVQgQWNhZGVteSAoSVQg0JDQutCw0LTQtdC80LjRjykg0L_RgNC4INCa0JDQoNCf0J7Qow!8m2!3d42.8730426!4d74.619014!3m4!1s0x389eb7df8ad88681:0x8c8be4738821a7b3!8m2!3d42.8730426!4d74.619014?hl=ru-KG',
         text: 'Ибраимова 115/1'
     },
     {

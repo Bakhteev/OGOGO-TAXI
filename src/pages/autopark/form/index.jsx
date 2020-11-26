@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { cities } from './const';
 
 const Form = () => {
     return (
@@ -15,26 +16,15 @@ const Form = () => {
                         <input type="tel" placeholder="Номер телефона" className="registration__input"/>
                         <input type="text" placeholder="Названия парка" className="registration__input"/>
                         <select name="city" id="City" className="registration__select">
-                            <option value="1">Бишкек</option>
-                            <option value="2">Ош</option>
-                            {/* <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                            <option value="6"></option>
-                            <option value="7"></option>
-                            <option value="8"></option>
-                            <option value="9"></option>
-                            <option value="10"></option>
-                            <option value="11"></option>
-                            <option value="12"></option>
-                            <option value="13"></option>
-                            <option value="14"></option>
-                            <option value="15"></option>
-                            <option value="16"></option>
-                            <option value="17"></option>
-                            <option value="18"></option>
-                            <option value="19"></option>
-                            <option value="20"></option>  */}
+                            {cities.map(item =>{
+                                return(
+                                <option 
+                                    key={item.id + item.city}
+                                    value={item.id}>
+                                    {item.city}
+                                </option>
+                                )
+                            })}
                         </select>
                         <button className="registration__btn btn">Подключиться</button>
                     </div>
