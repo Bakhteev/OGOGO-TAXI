@@ -1,5 +1,5 @@
 .hero {
-    margin: 94px 0 150px 0;
+    margin: 94px 0 0 0;
     &__content {
         overflow-x: hidden;
     }
@@ -19,7 +19,5 @@
     }
     &__btn {
         font-size: 20px;
-        width: 230px;
-        height: 62px;
     }
 }

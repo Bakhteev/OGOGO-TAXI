@@ -187,6 +187,9 @@
         &__link {
             font-size: 32px;
             line-height: 70px;
+            &:hover{
+                color: $grey;
+            }
             &::before {
                 display: none;
             }

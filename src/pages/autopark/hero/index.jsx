@@ -17,7 +17,7 @@ function Hero() {
             <div className="hero__content flex">
                 <div className="col-6 hero__item">
                     <h1 className="hero__title title">Хочешь сотрудничать с нами ?</h1>
-                    <button className="hero__btn btn" id="apBtn">Заполнить анкету</button>
+                    <a href="#registration" className="hero__btn btn" >Заполнить анкету</a>
                 </div>
                 <div className="col-6">
                     <img className="hero__img" src={autoparkImg} alt=""/>

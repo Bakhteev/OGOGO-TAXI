@@ -29,9 +29,11 @@ const Footer = () => {
                             <h6 className="footer__description">О нас</h6>
                             <p className="footer__item">Огого такси это онлайн сервис вызова авто в Кыргызстане !</p>
                             <div className="footer__social row">
-                                {icons.map((item) =>{
+                                {icons.map((item, index) =>{
                                     return(
-                                        <a href={item.link} className="footer__link" target="_blank">
+                                        <a 
+                                            key={index + item}
+                                            href={item.link} className="footer__link" target="_blank">
                                             {item.icon}
                                         </a>
                                     );
@@ -40,9 +42,10 @@ const Footer = () => {
                         </ul>
                         <ul className="footer__list row">
                             <h6 className="footer__description">Ссылки</h6>
-                            {navObj.map((item) =>{
+                            {navObj.map((item, index) =>{
                                     return(
                                         <Link
+                                            key={index + item}
                                             to={item.link} className="footer__item">{item.text}
                                         </Link>
                                     );
@@ -50,9 +53,14 @@ const Footer = () => {
                         </ul>
                         <ul className="footer__list">
                             <h6 className="footer__description">Контакты</h6>
-                            {contacts.map((item) =>{
+                            {contacts.map((item, index) =>{
                                 return(
-                                    <a className="footer__item" href={item.link}>{item.text}</a>
+                                    <a 
+                                        key={index + item}
+                                        className="footer__item" href={item.link}
+                                    >
+                                        {item.text}
+                                    </a>
                                 );
                             })}
                         </ul>
