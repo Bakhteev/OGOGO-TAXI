@@ -5,7 +5,7 @@ import Phone from '../../../assets/img/mobile/phone.png'
 
 const Mobile = () => {
     return (
-        <section className="mobile">
+        <section className="mobile" id="mobile">
             <div className="container">
                 <div className="mobile__content">
                     <h2 className="mobile__title title">Заказывайте такси через мобильное приложение </h2>

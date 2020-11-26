@@ -7,9 +7,10 @@ const Services = () => {
         <section className="services">
             <div className="container">
                 <div className="services__content row">
-                    {servicesObj.map((item) =>{
+                    {servicesObj.map((item, index) =>{
                         return(
                             <ServicesItem
+                                key={item + index}
                                 icon = {item.icon}
                                 title = {item.title}
                                 subtitle = {item.subtitle}

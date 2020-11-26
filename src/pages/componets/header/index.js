@@ -23,7 +23,7 @@ const Header = () => {
         <header className="header">
             <div className="header__content row">
                 <div className="header__left">
-                    <a href="" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <svg width="76" height="24" viewBox="0 0 76 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0)">
                                 <path
@@ -49,7 +49,7 @@ const Header = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
                 <div className="header__middle">
                     <nav className="header__nav">
@@ -63,10 +63,11 @@ const Header = () => {
                             {navObj.map((item, index) =>{
                                 return(
                                     <li
-                                        onClick={() => HandleClick(index)} 
+                                        key={index + item}
+                                        onClick={() => Burger()}
                                         className="header__item">
                                         <Link
-                                            to={item.link} className={`header__link ${index === elIndex ? 'active' : '' }`}>{item.text}
+                                            to={item.link} className="header__link">{item.text}
                                         </Link>
                                     </li>
                                 )
