@@ -8,16 +8,12 @@ const Header = () => {
 
     const [burger, setBurger] = useState(false)
     const [drop, setDrop] = useState(false)
-    const [elIndex, setElIndex] = useState(0)
 
     const Burger = () => {
         burger === false ? setBurger(true) : setBurger(false)
     };
     const Drop = () =>{
         drop === false ? setDrop(true) : setDrop(false)
-    };
-    const HandleClick = (index) => {
-        setElIndex(index);
     }; 
     return(
         <header className="header">

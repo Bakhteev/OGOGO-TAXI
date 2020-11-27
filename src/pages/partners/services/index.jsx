@@ -2,7 +2,7 @@ import React from 'react';
 import ServicesItem from './ServicesItem';
 import { servicesObj } from './obj';
 
-function Services() {
+const Services = () => {
     return (
         <section className="services">
             <div className="container">

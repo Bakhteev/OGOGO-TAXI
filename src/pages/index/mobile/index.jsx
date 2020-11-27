@@ -15,8 +15,8 @@ const Mobile = () => {
                         <li className="mobile__item">Отслеживайте подачу автомобиля на карте</li>
                         <li className="mobile__item">Бирге тариф для попутчиков</li>
                     </ul>
-                    <a className="mobile__link" href="https://itunes.apple.com/ua/app/id654646098" target="_blank"><img className="mobile__apple" src={Apple} alt=""></img></a>
-                    <a className="mobile__link" href="https://play.google.com/store/apps/details?id=ua.com.uklontaxi" target="_blank"><img className="mobile__google" src={Google} alt=""></img></a>
+                    <a className="mobile__link" href="https://itunes.apple.com/ua/app/id654646098" target="_blank" rel="noreferrer"><img className="mobile__apple" src={Apple} alt=""></img></a>
+                    <a className="mobile__link" href="https://play.google.com/store/apps/details?id=ua.com.uklontaxi" target="_blank" rel="noreferrer"><img className="mobile__google" src={Google} alt=""></img></a>
                     <img src={Phone} alt="" className="mobile__img"></img>
                 </div>
             </div>

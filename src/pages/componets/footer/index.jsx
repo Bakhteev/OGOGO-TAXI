@@ -16,10 +16,10 @@ const Footer = () => {
                             <img src={logo} alt="" className="footer__logo"/>
                         </Link>
                         <div className="footer__right">
-                        <a href="https://itunes.apple.com/ua/app/id654646098" target="_blank">
+                        <a href="https://itunes.apple.com/ua/app/id654646098" target="_blank" rel="noreferrer">
                             <img className="mobile__apple"src={apple}/>
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=ua.com.uklontaxi" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=ua.com.uklontaxi" target="_blank" rel="noreferrer">
                             <img className="mobile__google" src={googlePlay} alt=""/></a>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                                     return(
                                         <a 
                                             key={index + item}
-                                            href={item.link} className="footer__link" target="_blank">
+                                            href={item.link} className="footer__link" target="_blank" rel="noreferrer">
                                             {item.icon}
                                         </a>
                                     );
