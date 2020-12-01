@@ -1,3 +1,25 @@
+@media screen and (max-width:1366px){
+    .hero{
+        &__title{
+            margin-top: 60px;   
+        }
+        &__img{
+            height: 450px;
+        }
+    }
+    .autopark{
+        .hero{
+            &__title{
+                margin-top: 80px;  
+            }
+            &__img{
+                min-width: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     html,body {
         overflow-x: hidden;

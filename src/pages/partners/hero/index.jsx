@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Hero() {
+const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__content flex">
@@ -14,5 +14,4 @@ function Hero() {
         </section>
     )
 }
-
 export default Hero;
