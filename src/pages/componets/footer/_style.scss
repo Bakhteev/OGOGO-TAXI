@@ -29,6 +29,11 @@
         display: block;
         color: #fff;
         padding-bottom: 18px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            color: $orange;
+        }
     }
     &__link {
         padding: 5px 5px 3px;

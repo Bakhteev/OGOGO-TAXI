@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import driver from '../../../assets/img/team/team-driver.jpg'
+import driver from '../../../assets/img/team/team-driver.webp'
 
 const Team = () => {
     return (
