@@ -1,5 +1,10 @@
 .header {
-    margin: 40px 16px 0 16px;
+    position: sticky;
+    margin: 40px 0;
+    top: 0px;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 10;
     &__burger {
         position: fixed;
         display: none;
@@ -48,7 +53,7 @@
     }
     &__content {
         justify-content: space-around;
-        margin-top: 20px;
+        padding: 10px 0;
     }
     &__logo {
         padding-top:10px;
