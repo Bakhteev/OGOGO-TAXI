@@ -1,10 +1,13 @@
-@media screen and (max-width:1366px){
+@media screen and (max-width:1440px){
     .hero{
         &__title{
             margin-top: 60px;   
         }
         &__img{
-            height: 450px;
+            max-height: 450px;
+        }
+        &__item:first-child{
+            padding: 0 90px 0 50px;
         }
     }
     .autopark{
@@ -13,10 +16,22 @@
                 margin-top: 80px;  
             }
             &__img{
-                min-width: auto;
+                width: auto;
                 height: auto;
             }
+            &__item{
+                padding: 0 40px;
+            }
         }
+    }
+    .mobile{
+        padding-top: 100px;
+    }
+    .app{
+        padding: 100px 0;
+    }
+    .registration{
+        padding-top: 140px;
     }
 }
 
@@ -239,6 +254,14 @@
         &__title,
         &__description{
             max-width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width:520px){
+    .car{
+        &__content{
+            background-position: 280px 50%;
         }
     }
 }

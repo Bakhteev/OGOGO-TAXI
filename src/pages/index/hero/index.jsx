@@ -1,5 +1,5 @@
 import React from 'react'
-import rider from '../../../assets/img/hero/rider-hero.jpg'
+import rider from '../../../assets/img/hero/rider-hero.webp'
 
 const Hero = () => {
     return (

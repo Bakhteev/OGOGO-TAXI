@@ -1,7 +1,7 @@
 import React from 'react'
-import Apple from '../../../assets/img/mobile/aplle.png'
-import Google from '../../../assets/img/mobile/google-play.png'
-import Phone from '../../../assets/img/mobile/phone.png'
+import Apple from '../../../assets/img/mobile/aplle.webp'
+import Google from '../../../assets/img/mobile/google-play.webp'
+import Phone from '../../../assets/img/mobile/phone.webp'
 
 const Mobile = () => {
     return (

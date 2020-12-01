@@ -1,7 +1,7 @@
 import React from 'react'
-import apple from "../../../assets/img/mobile/aplle.png";
-import googlePlay from '../../../assets/img/mobile/google-play.png';
-import phone from '../../../assets/img/pagesImg/partners/phone.png';
+import apple from "../../../assets/img/mobile/aplle.webp";
+import googlePlay from '../../../assets/img/mobile/google-play.webp';
+import phone from '../../../assets/img/pagesImg/partners/phone.webp';
 
 const PartnersApp = () => {
     return (

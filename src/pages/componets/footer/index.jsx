@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { icons, contacts } from './const'
 import { navObj } from '../header/const'
 import logo from '../../../assets/img/footer/footer-logo-light.svg';
-import apple from "../../../assets/img/mobile/aplle.png";
-import googlePlay from '../../../assets/img/mobile/google-play.png';
+import Apple from "../../../assets/img/mobile/aplle.webp";
+import googlePlay from '../../../assets/img/mobile/google-play.webp';
 
 const Footer = () => {
     return (
@@ -17,7 +17,7 @@ const Footer = () => {
                         </Link>
                         <div className="footer__right">
                         <a href="https://itunes.apple.com/ua/app/id654646098" target="_blank" rel="noreferrer">
-                            <img className="mobile__apple"src={apple}/>
+                            <img className="mobile__apple" src={Apple}/>
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=ua.com.uklontaxi" target="_blank" rel="noreferrer">
                             <img className="mobile__google" src={googlePlay} alt=""/></a>
